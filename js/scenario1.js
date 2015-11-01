@@ -81,6 +81,8 @@ $('#footer')
     },
     onBottomVisible: function() {
         $('#footer').addClass("stickyFooter");
+        // $('#avantages').addClass("passedFooter");
+        $('#avantages').css("padding-bottom","150px");
     }
   })
 ;
