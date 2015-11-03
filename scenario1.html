@@ -12,12 +12,84 @@
 
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
 
+  <link rel="stylesheet" type="text/css" href="css/jquery.reject.css" />
   <link rel="stylesheet" type="text/css" href="css/semantic.css">
   <link rel="stylesheet" type="text/css" href="css/scenario1.css">
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="js/jquery.reject.js"></script>
   <script src="js/semantic.js"></script>
   <script src="js/scenario1.js"></script>
+
+  <!-- REJECT OLD BROWSER -->
+  <script>
+	$(function() {
+		// Handle external links
+		$('a[rel="external"]').click(function() {
+			var href = $(this).attr('href');
+
+			// Send external link event to Google Analytics
+			try {
+				_gaq.push(['_trackEvent','External Links', href.split(/\/+/g)[1], href]);
+			} catch (e) {};
+
+			window.open(href,'jr_'+Math.round(Math.random()*11));
+			return false;
+		});
+
+		// Handle displaying of option links
+		$('em.option').css({
+			cursor: 'pointer',
+			fontSize: '1.1em',
+			color: '#333',
+			letterSpacing: '1px',
+			borderBottom: '1px dashed #BBB'
+		}).click(function() {
+			var self = $(this);
+			var opt = $.trim(self.text());
+
+			$('ol.dp-c:first').children('li').children('span').each(function() {
+				var self = $(this);
+				var text = self.text();
+				var srch = opt+':';
+
+				// If found, highlight and jump window to position on page
+				if (text.search(srch) !== -1) {
+					self.css('color','red');
+					window.location.hash = '#c-'+opt;
+					window.scrollTo(0,self[0].offsetTop);
+				}
+			});
+		});
+
+
+
+		function excludeOldIE(){
+			$.reject({
+				reject: {
+					// safari: true, // Apple Safari
+					// chrome: true, // Google Chrome
+					// firefox: true, // Mozilla Firefox
+					msie: 9, // Microsoft Internet Explorer
+					opera: true, // Opera
+					konqueror: true, // Konqueror (Linux)
+					unknown: true // Everything else
+				},
+				header: 'Navigateur non compatible ', // Header Text
+				paragraph1: 'L\'affichage de ce parcours n\'est pas optimisé pour fonctionner avec une version d\'Internet Explorer antérieur à 10 ou avec le navigateur Opéra. Veuillez vous référer à un des navigateurs suivant afin d\'effectuer le test dans de bonne conditions. Nous vous recommandons d\'utiliser Chrome.', // Paragraph 1
+				paragraph2: '',
+				display: ['chrome','firefox','safari'],
+				close: false
+			}); // Customized Browsers
+
+			return false;
+		}
+
+		excludeOldIE();
+
+
+	});
+	</script>
 
 </head>
 <body>
@@ -187,8 +259,7 @@
         <div class="ten wide column garantie_content_col">
           <h4>Responsabilité civile
             <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted"  data-position="top center" >
-            <!-- <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="115" data-position="top center" > -->
-            <div class="ui popup transition hidden">
+            <div class="ui fluid popup transition hidden">
               Cette garantie prend en charge les dommages que le conducteur de votre véhicule pourrait  causer aux autres lors d’un accident de la circulation dont il est responsable. Ainsi seront indemnisés :
               <ul>
                 <li>les personnes blessées ou tuées (les passagers de votre véhicule, les conducteurs et passagers des autres véhicules, les piétons ou cyclistes)</li>
@@ -196,18 +267,10 @@
               </ul>
               En revanche, vos propres dommages (corporels ou matériels) ne sont jamais pris en charge par cette garantie.
             </div>
-            <!-- <div class="ui fluid popup transition hidden">
-              Cette garantie prend en charge les dommages que le conducteur de votre véhicule pourrait  causer aux autres lors d’un accident de la circulation dont il est responsable. Ainsi seront indemnisés :
-              <ul>
-                <li>les personnes blessées ou tuées (les passagers de votre véhicule, les conducteurs et passagers des autres véhicules, les piétons ou cyclistes)</li>
-                <li>les dégâts matériels causés aux autres (véhicules, façades etc…)</li>
-              </ul>
-              En revanche, vos propres dommages (corporels ou matériels) ne sont jamais pris en charge par cette garantie.
-            </div> -->
           </h4>
           <p>Prise en charge des dommages que vous causez aux autres avec votre véhicule</p>
           <h4>Défense Pénale et Recours suite à Accident
-            <img src="images/information_colored.svg" class="iconInfo pop" data-offset="-58" data-variation="basic inverted" data-position="top center" >
+            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
             <div class="ui fluid popup transition hidden" >
               En cas d’accident de la circulation, nous assurons votre défense devant les tribunaux lorsque vous faites l’objet de poursuites pénales. Si vous n’êtes pas responsable de l’accident, nous vous aidons à obtenir la réparation de vos dommages (véhicule assuré et ses occupants).
             </div>
@@ -237,7 +300,7 @@
         </div>
         <div class="ten wide column garantie_content_col offers">
           <h4>Garantie du conducteur
-            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="100" data-position="top center" >
+            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
             <div class="ui fluid popup transition hidden">
               Cette garantie prend en charge les préjudices liés aux blessures ou au décès du conducteur de votre véhicule (dépenses de santé/chirurgie/obsèques, handicap temporaire ou définitif, assistance d’une tierce personne, perte de revenus, etc…) lorsqu'il est lui-même responsable de l'accident.
             </div>
@@ -305,7 +368,7 @@
         </div>
         <div class="ten wide column garantie_content_col offers">
           <h4>Assistance
-            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="192" data-position="top center" >
+            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
             <div class="ui fluid popup transition hidden">
               Nous organisons le dépannage/remorquage de votre véhicule 24h/24, 7j/7, en France et dans tous les pays étrangers figurant sur votre carte verte. et prenons en charge les frais de dépannage/remorquage.<br>
 Nous prenons en charge l’organisation et les frais de taxi, train ou avion pour vous ramener chez vous et ensuite pour venir récupérer votre véhicule une fois réparé. Si vous préférez attendre sur place que votre véhicule soit réparé, nous organisons et prenons en charge les nuits d’hôtel (jusqu’à 2 nuits).
@@ -396,7 +459,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
 
       <!-- SECTION OFFRE -->
       <h4>Bris de glace
-        <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="178" data-position="top center" >
+        <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
         <div class="ui fluid popup transition hidden">
           En fonction du niveau choisi, nous prenons en charge les frais de réparation ou de remplacement des éléments vitrés endommagés pare-brise, vitres, feux avant ou toit vitré.
         </div>
@@ -462,7 +525,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
 
   <!-- SECTION OFFRE -->
   <h4>Dommages tous accidents
-    <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="80" data-position="top center" >
+    <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
     <div class="ui fluid popup transition hidden">
       Nous garantissons votre véhicule contre les dommages résultant de toute collision, choc, acte de vandalisme, ou sortie de route que vous soyez responsable ou non.
     </div>
@@ -507,7 +570,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
     <div class="offer">
       <div class="ui label">2 € /an</div>
       <h4>Catastrophes naturelles, technologiques et attentats
-        <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="-111" data-position="top center">
+        <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
         <div class="ui fluid popup transition hidden">
           Nous vous indemnisons pour les dommages matériels subis par votre véhicule en cas de grêle, neige, tempête, ouragan ou cyclone.
         </div>
@@ -536,7 +599,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
       <div class="offer">
         <div class="ui label">21 € /an</div>
         <h4>Indemnisation du véhicule renforcée
-          <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="8" data-position="top center">
+          <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
           <div class="ui fluid popup transition hidden">
             Votre véhicule vous est remboursé :
             <ul>
@@ -568,7 +631,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="offer">
           <div class="ui label">20 € /an</div>
           <h4>Garantie des équipements et aménagements non montés en série
-            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="-204" data-position="top center">
+            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
             <div class="ui fluid popup transition hidden">
               Nous indemnisons les équipements de votre véhicule non montés en série (coffre de toit, porte-vélos, aménagement pour personne handicapée...) jusqu’à 3500 € au titre des garanties incendie, vol, événements climatiques, et dommages tous accidents si celles-ci sont souscrites.
             </div>
@@ -602,7 +665,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
       <div class="offer">
         <div class="ui label">30 € /an</div>
         <h4>Vos animaux domestiques
-          <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="83" data-position="top center" >
+          <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
           <div class="ui fluid popup transition hidden">
             Si suite à un accident, votre animal domestique transporté est blessé, nous prenons en charge les frais de vétérinaire jusqu’à 1 500 € /an. En cas de décès, nous prenons en charge les frais (incinération, sépulture…) dans la limite de ce plafond.
           </div>
@@ -627,7 +690,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="offer">
           <div class="ui label">16 € /an</div>
           <h4>Vos effets personnels
-            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="116" data-position="top center">
+            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
             <div class="ui fluid popup transition hidden">
               Nous indemnisons vos effets personnels tels que bagages, objets personnels et appareils de type GPS, DVD, ordinateur portable s'ils sont endommagés ou volés en même temps que votre véhicule.
             </div>
@@ -663,7 +726,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
       <div class="offer">
         <div class="ui label">18 € /an</div>
         <h4>Protection juridique
-          <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="128" data-position="top center" >
+          <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
           <div class="ui fluid  popup transition hidden">
             Information juridique par téléphone et accompagnement jusqu’à la résolution amiable ou judiciaire du litige et la prise en charge des frais et honoraires  (experts, avocats…) jusqu’à 10 000 €  Domaines d’application :
             <ul>
@@ -697,7 +760,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="offer">
           <div class="ui label">112 € /an</div>
           <h4>Aucune franchise supplémentaire en cas de prêt de volant
-            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="basic inverted" data-offset="-148" data-position="top center">
+            <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
             <div class="ui fluid popup transition hidden">
               Lorsque vous prêtez votre véhicule à une personne autre que votre conjoint, une franchise complémentaire de 1500 € s’applique en cas d’accident  responsable. Cette option vous permet de supprimer la franchise complémentaire pour certains types de conducteurs à qui vous prêtez votre véhicule
             </div>
@@ -720,7 +783,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
 
         <!-- SECTION OFFRE -->
         <h4>Réparations suite à panne
-          <img src="images/information_colored.svg" id="specificIcon" class="iconInfo pop" data-variation="basic inverted" data-offset="82" data-position="top center" >
+          <img src="images/information_colored.svg" id="specificIcon" class="iconInfo pop" data-variation="inverted" data-position="top center" >
           <div class="ui fluid popup transition hidden">
             Cette garantie s’applique jusqu’au 100 000ème km du véhicule.
           </div>
