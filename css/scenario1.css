@@ -170,7 +170,7 @@ h5 {
   font-family: 'urwfranklingothicw02bold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
-  font-weight: bold;
+  font-weight: normal;
   padding: 0em;
 }
 
@@ -349,7 +349,7 @@ i.huge.icons {
 }
 
 .garanties .ui.segment {
-  padding: 40px 0px 66px 0px;
+  padding: 40px 0px 40px 0px;
 }
 
 
@@ -372,6 +372,8 @@ i.huge.icons {
   padding-top: 1.3rem;
 }
 
+
+
 .garanties .ui.segment .startTitle{
   margin-bottom: 20px;
 }
@@ -385,6 +387,12 @@ i.huge.icons {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
 
+}
+
+
+.garanties .ui.segment .ui.grid.startTitle > .column:not(.row).garantie_content_col{
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .garanties .ui.segment .startTitle .garantie_content_col h2{
@@ -643,7 +651,7 @@ i.huge.icons {
 .garanties .ui.right.rail {
   left:70%;
   z-index: 5;
-  padding-top: 66px;
+  padding-top: 40px;
   width: 200px;
 }
 
@@ -708,29 +716,35 @@ i.huge.icons {
   padding-right: 0;
 }
 
-.garanties .ui.right.rail .ui.segment.couverture {
+.garanties .ui.right.rail .ui.segment.selectionneur {
   background: #103184;
   color: #fff;
   font-size: 14px;
 }
 
-.garanties .ui.right.rail .ui.segment.couverture .ui.grid {
-  font-size: 12px;
-}
-
-.garanties .ui.right.rail .ui.segment.couverture .ui.grid > .column:not(.row), .ui.grid > .row > .column{
-  padding: 0;
-}
-
-.garanties .ui.right.rail .ui.segment.couverture .ui.progress {
-  margin-top: 10px;
+.garanties .ui.right.rail .ui.segment.selectionneur .ui.button {
+  font-family: 'urwfranklingothicw02medium';
+  font-weight: normal;
+  background: #1bb526;;
+  color: #fff;
+  line-height: 16px;
+  padding: 6px;
   margin-bottom: 5px;
-  background: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.garanties .ui.right.rail .ui.segment.couverture .ui.progress .bar {
-  height: 7px;
-  background: #1bb526;
+.garanties .ui.right.rail .ui.segment.selectionneur .ui.button span {
+  font-family: 'urwfranklingothicw02regular';
+}
+
+.garanties .ui.right.rail .ui.segment.selectionneur .ui.button:hover{
+  transition: background 0.2s;
+  background: #14971d;
+}
+
+.garanties .ui.right.rail h5{
+  font-family: 'urwfranklingothicw02regular';
+  font-weight: normal;
 }
 
 
@@ -749,6 +763,10 @@ i.huge.icons {
   padding-left: 5px;
   width: 78% !important;
 }
+
+
+
+
 
 
 
@@ -955,7 +973,59 @@ border-top: 1px dashed #cccccc;
 }
 
 
+/*******************************
+           Checkbox
+*******************************/
 
+
+.ui.radio.checkbox, .ui.checkbox{
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+
+.ui.radio.checkbox label, .ui.checkbox label{
+  width: 100%;
+  padding: 0;
+  font-family: 'urwfranklingothicw02regular';
+  font-size: 16px;
+  color: #333333;
+  background: #ffffff;
+  min-height: 1em;
+  padding: 0.78571429em 1.5em;
+  text-align: center;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+
+.ui.checkbox label{
+  border-top: none;
+
+}
+
+.ui.checkbox label > span:before{
+  content: "SÉLECTIONNER";
+}
+
+.ui.radio.checked label, .ui.checkbox.checked label{
+  color: #FFF !important;
+  background: #103184;
+  transition: background 0.2s;
+}
+
+.ui.radio.checked label > span:before, .ui.checkbox.checked label > span:before{
+  content: "SÉLECTIONNÉ";
+}
+
+
+.ui.radio.checkbox label:before, .ui.radio.checkbox label:after,
+.ui.checkbox label:before, .ui.checkbox label:after
+{
+  display: none;
+}
 
 
 
@@ -969,7 +1039,7 @@ border-top: 1px dashed #cccccc;
 #avantages {
   background: #efefef;
   margin-top: 40px;
-  padding-top:30px;
+  padding-top:10;
 }
 
 #avantages .ui.segment {

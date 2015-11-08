@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+  <!-- Site Properities -->
+  <title>AXA | Assurance Auto</title>
+
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" type="text/css" href="css/semantic.css">
+  <link rel="stylesheet" type="text/css" href="css/scenario3.css">
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="js/semantic.js"></script>
+  <script src="js/scenario3.js"></script>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="ui page padded grid">
+      <div class="middle aligned row">
+        <div class="four wide column">
+          <a href="#" id="logo"><img src="images/logo_axa_assurance_banque.svg" alt="AXA Banque"></a>
+        </div>
+        <div class="twelve wide column">
+          <div id="visual" class="ui right aligned segment">
+            <img id="baseline" src="images/baseline.png" srcset="images/baseline.png 1x, images/baseline@2x.png 2x" alt="1ère marque mondiale d'assurance depuis 7 ans">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- MASTER TITLE -->
+      <div id="masterTitle" class="ui inverted vertical segment">
+        <div class="ui page grid">
+          <div class="row">
+            <div class="one wide column icon_col">
+              <i class="huge icon-adjustement icon"></i>
+            </div>
+            <div class="fifteen wide column main_title_col">
+              <h1>Votre assurance auto AXA</h1>
+              <p id="second_title">Les garanties et le service AXA, à un prix compétitif</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- BREADCRUMB -->
+    <div id="breadcrumb" class="ui inverted vertical segment">
+      <div class="ui page grid">
+          <div class="sixteen wide center aligned column">
+            <div class="ui large inverted breadcrumb">
+              <div class="section link"><a href="scenario3.html"><span>Choisissez<br>votre formule</span></a></div>
+              <i class="right chevron icon divider"></i>
+              <div class="section link"><a href="scenario3_etape2_02_tiers_etendu.html"><span>Personnalisez<br>votre formule</span></a></div>
+              <i class="right chevron icon divider"></i>
+              <div class="active section"><span>Choississez vos<br>garanties complémentaires</span></div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+<!-- GARANTIES -->
+<div id="garanties" class="garanties extended complementaires">
+  <div class="ui vertical segment">
+    <div class="ui page grid">
+
+    <div class="row">
+
+      <div class="one wide column">
+
+        <!-- carte garantie -->
+        <a href="scenario3_etape2_01_tiers.html#garanties">
+          <div class="ui fluid card">
+            <div class="center aligned header"><h3>TIERS</h3>
+          </div>
+        </div>
+        </a>
+        <!-- fin de carte -->
+      </div>
+
+
+
+
+      <div class="fourteen wide column">
+
+
+        <!-- carte garantie -->
+        <div class="ui fluid card">
+          <div class="header"><h3>TIERS ÉTENDU</h3>
+            <div class="labelWrapper">
+              Votre tarif personnalisé :  <div class="ui label">309 € /an</div>
+            </div>
+          </div>
+
+
+          <div class="content extended">
+            <table class="ui definition padded very basic unstackable table">
+              <tbody>
+                <tr>
+                  <td>
+                    <h4 class="ui image header">
+                      <i class="icon-check icon"></i>
+                      <div class="content">
+                        Assistance <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                        <div class="ui popup transition hidden">
+                          Nous organisons le dépannage/remorquage de votre véhicule 24h/24, 7j/7, en France et dans tous les pays étrangers figurant sur votre carte verte. et prenons en charge les frais de dépannage/remorquage.<br>
+            Nous prenons en charge l’organisation et les frais de taxi, train ou avion pour vous ramener chez vous et ensuite pour venir récupérer votre véhicule une fois réparé. Si vous préférez attendre sur place que votre véhicule soit réparé, nous organisons et prenons en charge les nuits d’hôtel (jusqu’à 2 nuits).
+                        </div>
+                      </div>
+                    </h4>
+                  </td>
+                  <td class="radioGroup">
+                    <table class="ui very basic unstackable celled fixed table ">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui radio checkbox">
+                              <input type="radio" name="groupAssistance">
+                              <label class="textLabel">Franchise<br>panne 50km</label>
+                              <div class="ui label">14 € /an</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="ui radio checkbox">
+                              <input type="radio" name="groupAssistance">
+                              <label class="textLabel">Sans<br>Franchise<br>kilomètrique</label>
+                              <div class="ui label">25 € /an</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="ui radio checkbox">
+                              <input type="radio" name="groupAssistance">
+                              <label>Sans franchise<br>kilomètrique +<br>prêt de véhicule</label>
+                              <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
+                              <div class="ui label">72 € /an</div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <tr>
+                    <td>
+                      <h4 class="ui image header">
+                        <i class="icon-check icon"></i>
+                        <div class="content">
+                          Prêt de volant <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                          <div class="ui popup transition hidden" >
+                            Lorsque vous prêtez votre véhicule à une personne autre que votre conjoint, une franchise complémentaire de 1500 € s’applique en cas d’accident  responsable. Cette option vous permet de supprimer la franchise complémentaire pour certains types de conducteurs à qui vous prêtez votre véhicule
+                          </div>
+                        </div>
+                      </h4>
+                    </td>
+                    <td class="checkboxSimple">
+                      <div class="ui checkbox">
+                        <input type="checkbox" name="pretVolant">
+                        <label>Prêt de volant à tout conducteur de plus de 3 ans de permis,<br> ainsi qu'à vos enfants</label>
+                        <div class="ui label wide">112 € /an</div>
+                      </div>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 class="ui image header">
+                        <i class="icon-check icon"></i>
+                        <div class="content">
+                          Indémnisation de véhicule renforcée <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                          <div class="ui popup transition hidden" >
+                            Votre véhicule vous est remboursé :
+                            <ul>
+                              <li>les personnes blessées ou tuées (les passagers de votre véhicule, les conducteurs et passagers des autres véhicules, les piétons ou cyclistes)</li>
+                              <li>les dégâts matériels causés aux autres (véhicules, façades etc…)</li>
+                            </ul>
+                            La valeur d’achat correspond au prix auquel vous avez acheté votre véhicule.<br>
+                            La valeur marché correspond au prix auquel le véhicule aurait pu être vendu juste avant le sinistre. Elle est toujours déterminée par un expert
+                          </div>
+                        </div>
+                      </h4>
+                    </td>
+                    <td class="checkboxSimple">
+                      <div class="ui checkbox">
+                        <input type="checkbox" name="pretVolant">
+                        <label>Indemnisation en valeur à neuf 36 mois,<br> puis valeur à dire d'expert +15 %</label>
+                        <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
+                        <div class="ui label">21 € /an</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 class="ui image header">
+                        <i class="icon-check icon"></i>
+                        <div class="content">
+                          Vos effets personnels <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                          <div class="ui popup transition hidden" >
+                            Nous indemnisons vos effets personnels tels que bagages, objets personnels et appareils de type GPS, DVD, ordinateur portable s'ils sont endommagés ou volés en même temps que votre véhicule.
+                          </div>
+                        </div>
+                      </h4>
+                    </td>
+                    <td class="checkboxSimple">
+                      <div class="ui checkbox">
+                        <input type="checkbox" name="pretVolant">
+                        <label>Garantie effets personnels<br>jusqu'à 1 000 € remboursés</label>
+                        <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
+                        <div class="ui label">16 € /an</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 class="ui image header">
+                        <i class="icon-check icon"></i>
+                        <div class="content">
+                          Protection juridique <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                          <div class="ui popup transition hidden" >
+                            Information juridique par téléphone et accompagnement jusqu’à la résolution amiable ou judiciaire du litige et la prise en charge des frais et honoraires  (experts, avocats…) jusqu’à 10 000 €  Domaines d’application :
+                            <ul>
+                              <li>l’achat ou la vente du véhicule,</li>
+                              <li>le contrôle technique,</li>
+                              <li>la réparation par un professionnel </li>
+                              <li>le box ou parking du véhicule,</li>
+                              <li>l’agression par un autre automobiliste</li>
+                              <li>tout litige vous opposant à l’assureur de votre véhicule</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </h4>
+                    </td>
+                    <td class="checkboxSimple">
+                      <div class="ui checkbox">
+                        <input type="checkbox" name="pretVolant">
+                        <label>Protection<br>juridique</label>
+                        <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
+                        <div class="ui label">18 € /an</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 class="ui image header">
+                        <i class="icon-check icon"></i>
+                        <div class="content">
+                          Équipements non<br>montés en série <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                          <div class="ui popup transition hidden" >
+                            Nous indemnisons les équipements de votre véhicule non montés en série (coffre de toit, porte-vélos, aménagement pour personne handicapée...) jusqu’à 3500 € au titre des garanties incendie, vol, événements climatiques, et dommages tous accidents si celles-ci sont souscrites.
+                          </div>
+                        </div>
+                      </h4>
+                    </td>
+                    <td class="checkboxSimple">
+                      <div class="ui checkbox">
+                        <input type="checkbox" name="pretVolant">
+                        <label>Garantie<br>équipement</label>
+                        <div class="ui label">20 € /an</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 class="ui image header">
+                        <i class="icon-check icon"></i>
+                        <div class="content">
+                          Animaux domestiques <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                          <div class="ui popup transition hidden" >
+                            Si suite à un accident, votre animal domestique transporté est blessé, nous prenons en charge les frais de vétérinaire jusqu’à 1 500 € /an. En cas de décès, nous prenons en charge les frais (incinération, sépulture…) dans la limite de ce plafond.
+                          </div>
+                        </div>
+                      </h4>
+                    </td>
+                    <td class="checkboxSimple">
+                      <div class="ui checkbox">
+                        <input type="checkbox" name="pretVolant">
+                        <label>Garantie<br>animaux</label>
+                        <div class="ui label">20 € /an</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h4 class="ui image header">
+                        <i class="icon-check icon"></i>
+                        <div class="content">
+                          Réparation suite à panne<img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                          <div class="ui popup transition hidden">
+                            Cette garantie s’applique jusqu’au 100 000ème km du véhicule.
+                          </div>
+                        </div>
+                      </h4>
+                    </td>
+                    <td class="radioGroup">
+                      <table class="ui very basic unstackable celled fixed table ">
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="ui radio checkbox">
+                                <input type="radio" name="groupPanne">
+                                <label class="textLabel">Pannes<br>mécaniques</label>
+                                <div class="ui label wide">204 € / an</div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="ui radio checkbox">
+                                <input type="radio" name="groupPanne">
+                                <label class="textLabel">Pannes<br>mécaniques<br>+ électriques</label>
+                                <div class="ui label wide">355 € /an</div>
+                              </div>
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+        </div>
+        <!-- fin de carte -->
+      </div>
+
+
+      <div class="one wide column">
+        <!-- carte garantie -->
+        <a href="scenario3_etape2_03_tous_risques.html#garanties">
+          <div class="ui fluid card">
+            <div class="header centerTitle"><h3>TIERS<br>RISQUES</h3>
+            </div>
+          </div>
+        </a>
+        <!-- fin de carte -->
+      </div>
+
+
+    </div>
+
+    <!-- legende -->
+    <div class="one wide column"></div>
+    <div class="fourteen wide column legende">
+      <img src="images/recommandation_badge.svg"><p>Formule recommandée par AXA en fonction de votre profil </p>
+    </div>
+
+
+
+    </div>
+  </div>
+</div>
+<!-- fin des garanties -->
+
+
+<!-- FOOTER -->
+<div id="footer" class="ui vertical center aligned segment">
+
+  <h3>VOTRE TARIF ASSURANCE AUTO  <span>252 € /an<span></h3>
+  <div class="ui section inverted divider"></div>
+  <button class="big ui green button cta">
+    Voir le récapitulatif et souscrire  <i class="chevron right icon"></i>
+  </button>
+
+  <!-- Modal souscription -->
+  <div class="long ui modal">
+    <div class="ui segment close">
+      <img src="images/close.svg">
+    </div>
+    <table class="ui single line padded very basic table">
+      <tbody>
+        <thead>
+          <tr>
+            <th class="first" colspan="5">VOS GARANTIES MINIMUM</th>
+          </tr>
+        </thead>
+        <tr>
+          <td colspan="3">Responsabilité civile + Dépense Pénale et Recours Suite à Accident</td>
+          <td class="amount">54 €</td>
+          <td><i class="huge icon-locker icon"></i></td>
+        </tr>
+        <thead>
+          <tr>
+            <th colspan="5">VOTRE SÉLECTION DE GARANTIES</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>VOTRE PROTECTION</td>
+          <td class="offer">Garantie du conducteur</td>
+          <td class="detailOffer">Jusqu’à 500 000 €</td>
+          <td class="amount">54 €</td>
+          <td><i class="huge icon-trash icon"></i></td>
+        </tr>
+        <tr>
+          <td>ASSISTANCE</td>
+          <td class="offer">Dépannage</td>
+          <td class="detailOffer">Niveau 1</td>
+          <td class="amount">8 €</td>
+          <td><i class="huge icon-trash icon"></i></td>
+        </tr>
+        <tr>
+          <td>VÉHICULE</td>
+          <td class="offer">Vol / Incendie / Évén. climatiques</td>
+          <td class="detailOffer">Sans Franchise</td>
+          <td class="amount">20 €</td>
+          <td><i class="huge icon-trash icon"></i></td>
+        </tr>
+        <tr class="owned">
+          <td></td>
+          <td class="offer">Bris de glace</td>
+          <td class="detailOffer">Niveau 2</td>
+          <td class="amount">21 €</td>
+          <td><i class="huge icon-trash icon"></i></td>
+        </tr>
+        <tr>
+          <td>CE QUE VOUS TRANSPORTEZ</td>
+          <td class="offer">Animaux domestiques</td>
+          <td class="detailOffer"></td>
+          <td class="amount">30 €</td>
+          <td><i class="huge icon-trash icon"></i></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="footer" >
+
+      <h3>VOTRE TARIF ASSURANCE AUTO  <span>309 € /an<span></h3>
+      <div class="ui section inverted divider"></div>
+      <button class="big ui green button cta">
+        Voir le récapitulatif et souscrire  <i class="chevron right icon"></i>
+      </button>
+    </div>
+  </div>
+  <!-- Fin Modal souscription -->
+</div>
+<!-- FIN FOOTER -->
+<!-- AVANTAGES -->
+<div id="avantages" class="ui vertical segment passedFooter">
+
+<!-- grid structure -->
+  <div class="ui page relaxed grid">
+
+    <div class="three wide right aligned column garanties_icons_col">
+    </div>
+
+    <!-- col content -->
+    <div class="ten wide column garantie_content_col offers">
+
+
+      <!-- title-->
+      <div class="ui grid">
+        <div class="sixteen wide center aligned column">
+          <h2>Les avantages AXA inclus dans votre contrat</h2>
+        </div>
+      </div>
+
+      <!-- ui grid content-->
+      <div class="ui grid">
+        <div class="height wide column">
+          <div class="ui grid">
+            <div class="one wide column">
+                <i class="icon-check icon"></i>
+            </div>
+            <div class="fourteen wide column">
+              <h4>Réduction Bonus</h4>
+              <p>50 % garantie à vie</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="height wide column">
+          <div class="ui grid">
+            <div class="two wide column">
+                <i class="icon-check icon"></i>
+            </div>
+            <div class="fourteen wide column">
+              <h4>Au plus proche de chez vous</h4>
+              <p>7500 conseillers répartis dans toute la France</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin ui grid content-->
+
+      <!-- ui grid content-->
+      <div class="ui grid">
+        <div class="height wide column">
+          <div class="ui grid">
+            <div class="two wide column">
+                <i class="icon-check icon"></i>
+            </div>
+            <div class="fourteen wide column">
+              <h4>Taxi Joker pour les - de 30 ans</h4>
+              <p>5 retours en taxi offerts /an en cas d'incapacité de conduite</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="height wide column">
+          <div class="ui grid">
+            <div class="two wide column">
+                <i class="icon-check icon"></i>
+            </div>
+            <div class="fourteen wide column">
+              <h4>Une relation durable</h4>
+              <p>En moyenne un conseiller vous accompagne pendant 12 ans</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin ui grid content-->
+
+      <!-- ui grid content-->
+      <div class="ui grid">
+        <div class="height wide column">
+          <div class="ui grid">
+            <div class="two wide column">
+                <i class="icon-check icon"></i>
+            </div>
+            <div class="fourteen wide column">
+              <h4>Pack Changement de véhicule</h4>
+              <p>Garanties offertes pour changer de véhicule en toute sérénité</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="height wide column">
+          <div class="ui grid">
+            <div class="two wide column">
+                <i class="icon-check icon"></i>
+            </div>
+            <div class="fourteen wide column">
+              <h4>Un conseil personnalisé</h4>
+              <p>Nos conseillers sont disponibles pour répondre à vos questions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin ui grid content-->
+
+    </div>
+    <!-- fin col content -->
+
+  </div>
+  <!-- fin grid structure -->
+
+</div>
+<!-- FIN AVANTAGES -->
+
+
+
+</body>
+
+</html>

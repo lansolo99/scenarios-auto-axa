@@ -4,22 +4,47 @@ $(document)
 
 // RADIO
 
-$('.ui.three.cards .button')
-  .state({
-  text: {
-    inactive   : 'SÉLECTIONNER',
-    active     : 'SÉLECTIONNÉ'
-  }
-})
+// $('.ui.three.cards .button')
+//   .state({
+//   text: {
+//     inactive   : 'SÉLECTIONNER',
+//     active     : 'SÉLECTIONNÉ'
+//   }
+// })
+// ;
+
+// $('.ui.checkbox').checkbox('uncheck');
+
+$('.checkbox')
+  .checkbox({
+    onChecked: function() {
+
+    }
+  })
 ;
 
 
 
 
+// Tiers
+$('.checkbox').checkbox('attach events', '.tiers.button', 'uncheck');
+$('.tiers.checkbox').checkbox('attach events', '.tiers.button', 'check');
+
+// Tiers etendu
+$('.checkbox').checkbox('attach events', '.tiersEtendu.button', 'uncheck');
+$('.etendu.checkbox').checkbox('attach events', '.tiersEtendu.button', 'check');
+
+// Tous risques
+$('.checkbox').checkbox('attach events', '.tousRisques.button', 'uncheck');
+$('.tousRisques.checkbox').checkbox('attach events', '.tousRisques.button', 'check');
+
+
+// Reset
+$('.checkbox').checkbox('attach events', '.resetAll.button', 'uncheck');
+
 
 
 // POPUP
-
 
 $('.pop')
   .popup({
@@ -59,13 +84,21 @@ $('#footer .long.ui.modal')
   .modal({
           detachable: true,
           transition: 'scale',
-          duration: 200
+          duration: 200,
+          onShow: function(){
+            $('.garanties .ui.right.rail').css("z-index","3");
+          },
+          onHide: function(){
+            $('.garanties .ui.right.rail').css("z-index","5");
+          }
         }
     )
   .modal('attach events', '.cta', 'show')
 ;
 
 
+
+// FOOTER Sticky
 $('#footer .ui.sticky')
   .sticky({
     context: '.garanties'
@@ -76,9 +109,9 @@ $('#footer .ui.sticky')
 // VISIBILITY MANAGEMENT
 $('#footer')
   .visibility({
-    onTopVisible: function() {
-      $('.ui.right.rail').css("display", "none");
-    },
+    // onTopVisible: function() {
+    //   $('.ui.right.rail').css("display", "none");
+    // },
     onBottomVisible: function() {
         $('#footer').addClass("stickyFooter");
         // $('#avantages').addClass("passedFooter");

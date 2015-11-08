@@ -172,6 +172,7 @@ h5 {
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: bold;
   padding: 0em;
+  font-weight: normal;
 }
 
 
@@ -192,8 +193,49 @@ h5 {
   }
 }
 
+
+/* custom width for extended grid */
+
+@media only screen and (min-width: 320px){
+.garanties.extended .ui.page.grid {
+    width: 1250px;
+}
+}
+
 .ui.padded.grid:not(.vertically):not(.horizontally) {
   margin:auto !important;
+}
+
+.garanties.extended .ui.grid > .row{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.garanties.extended .ui.grid .column{
+  /* padding:0 5px; */
+  padding: 0px;
+  margin: 0 5px;
+}
+
+.garanties.extended .ui.grid  [class*="fourteen wide"].column{
+  width: 81% !important;
+}
+
+.garanties.extended .ui.grid  [class*="one wide"].column{
+  width: 8% !important;
+}
+
+.garanties.extended .ui.grid > .row > [class*="one wide"].column .ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child{
+  text-align: center;
+}
+
+.garanties.extended .ui.grid > .row > [class*="one wide"].column{
+  opacity: 0.3;
+  background: #efefef;
+}
+
+.garanties.extended .ui.grid > .row > [class*="one wide"].column .ui.header .icon{
+  margin-right: 0;
 }
 
 
@@ -316,6 +358,21 @@ padding-left: 20px;
 }
 
 
+.ui.large.breadcrumb .section.link {
+  opacity: 0.3;
+}
+.ui.large.breadcrumb .section.link:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.ui.large.breadcrumb .section a {
+  color: #333333;
+}
+
+
+
+
 .ui.breadcrumb .section > i.icon {
 
   font-family: 'icomoon';
@@ -377,13 +434,13 @@ i.huge.icons {
 }
 
 .garanties .ui.segment {
-  padding: 40px 0px 66px 0px;
+  padding: 40px 0px 40px 0px;
 }
 
 
 .garanties .ui.segment  h4{
   color: #333333;
-  margin-bottom: 0.3rem;
+  /* margin-bottom: 0.3rem; */
   -webkit-margin-before: 0em;
 }
 
@@ -439,140 +496,6 @@ i.huge.icons {
 
 
 
-/* FORM */
-
-.garanties .ui.form .grouped.fields .field, .ui.form .grouped.inline.fields .field{
-  background: #efefef;
-  padding: 30px 95px 30px 15px;
-  color: #333;
-  margin-top:2px;
-  margin-bottom: 0px;
-}
-
-.garanties .ui.form .fields .field:first-child{
-  margin-top:0px;
-}
-
-
-.garanties .ui.form .grouped.fields .field .ui.label{
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: #103184;
-  color: #ffffff;
-  border-radius:0.28571429rem;
-}
-
-.garanties .ui.radio.checkbox label{
-  font-family: 'urwfranklingothicw02bold';
-  line-height: 1.5em;
-  padding-left: 2.5em;
-}
-
-.garanties .ui.radio.checkbox label span{
-  font-family: 'urwfranklingothicw02light';
-}
-
-
-/* HTML Checkbox */
-
-.ui.checkbox input[type="checkbox"],
-.ui.checkbox input[type="radio"] {
-  cursor: pointer;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  opacity: 0 !important;
-  outline: none;
-  z-index: 3;
-  width: 50px;
-  height: 50px;
-}
-
-
-/* Bullet */
-
-.ui.radio.checkbox .box:after,
-.ui.radio.checkbox label:after {
-  border: none;
-  content: '' !important;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-}
-
-/* Radio Checkbox */
-
-.ui.radio.checkbox .box:after,
-.ui.radio.checkbox label:after {
-  top: 1px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  border-radius: 500rem;
-  -webkit-transform: scale(0.46666667);
-  -ms-transform: scale(0.46666667);
-  transform: scale(0.46666667);
-  background-color: rgba(0, 0, 0, 0.87);
-}
-
-
-/* Box */
-
-.ui.radio.checkbox .box:before,
-.ui.radio.checkbox label:before {
-  content: '';
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 500rem;
-  top: 1px;
-  left: 0px;
-}
-
-/* Bullet */
-
-.ui.radio.checkbox .box:after,
-.ui.radio.checkbox label:after {
-  border: none;
-  content: '' !important;
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-}
-
-/* Radio Checkbox */
-
-.ui.radio.checkbox .box:after,
-.ui.radio.checkbox label:after {
-  top: 1px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
-/*   -webkit-transform: scale(0.46666667);
--ms-transform: scale(0.46666667);
-transform: scale(0.46666667); */
-  background-color: rgba(0, 0, 0, 0.87);
-}
-
-
-.ui.radio.checkbox input:checked ~ .box:after,
-.ui.radio.checkbox input:checked ~ label:after {
-  background-color: #888888;
-}
-.ui.checkbox input:checked ~ .box:after, .ui.checkbox input:checked ~ label:after{
-  background-color: #888888;
-}
-
-.ui.radio.checkbox input:focus:checked ~ .box:after,
-.ui.radio.checkbox input:focus:checked ~ label:after {
-  background-color: #888888;
-}
-
-
 
 
 .ui.button:hover {
@@ -600,7 +523,7 @@ transform: scale(0.46666667); */
 
 /* UI CARDS */
 
-.garanties .ui.segment .ui.cards > .card, .ui.card{
+.garanties .ui.segment .card, .ui.card{
   border-radius: 0;
   box-shadow: none;
   background: #efefef;
@@ -610,7 +533,7 @@ transform: scale(0.46666667); */
   border-radius: 0;
 }
 
-.garanties .ui.segment .ui.cards > .card > .header {
+.garanties .ui.segment .card > .header {
   position: relative;
   background: #103184;
   color: #FFF;
@@ -618,7 +541,19 @@ transform: scale(0.46666667); */
   border-radius: 0 !important;
 }
 
-.garanties .ui.segment .ui.cards > .card > .header h3 {
+.garanties .ui.segment .card > .header {
+  position: relative;
+  background: #103184;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 0 !important;
+}
+
+.garanties .ui.segment .card > .header.centerTitle {
+  height: 62px;
+}
+
+.garanties .ui.segment .card > .header h3 {
   font-family: 'urwfranklingothicw02medium';
   font-weight: normal;
   font-size: 21px;
@@ -627,26 +562,44 @@ transform: scale(0.46666667); */
   margin: 0;
 }
 
-.garanties .ui.segment .ui.cards > .card > .header .labelWrapper{
+.garanties .ui.segment .card > .header.centerTitle h3 {
+  text-align: center;
+  display: block;
+  position: absolute;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top:7px;
+  left:0px;
+}
+
+.garanties .ui.segment .card > .header .labelWrapper{
   position: absolute;
   font-size: 12px;
   top: 20px;
   right: 10px;
 }
 
-.garanties .ui.segment .ui.cards > .card > .header .ui.label{
+
+.garanties.extended .ui.segment .card > .header .labelWrapper{
+  font-size: 16px;
+  font-family: 'urwfranklingothicw02regular';
+}
+
+.garanties .ui.segment .card > .header .ui.label{
   padding: 5px;
   background: #FFF;
   color: #103184;
   margin-left: 5px;
 }
 
-.garanties .ui.segment .ui.cards > .card, .ui.card
 
-.garanties .ui.segment .ui.cards > .recommandation{
+
+.garanties .ui.segment .recommandation{
   position:relative;
 }
-.garanties .ui.segment .ui.cards > .recommandation:before {
+.garanties .ui.segment .recommandation:before {
     content:'';
     position:absolute;
     width:100%;
@@ -656,7 +609,7 @@ transform: scale(0.46666667); */
     left:0;
 }
 
-.garanties .ui.segment .ui.cards .offerBadge{
+.garanties .ui.segment .offerBadge{
   position: absolute;
   top:-20px;
   left:calc(50% - 10px);
@@ -665,26 +618,194 @@ transform: scale(0.46666667); */
 }
 
 
-.ui.cards > .card > .content, .ui.card > .content{
-  padding: 20px;
+.ui.cards > .card > .content, .ui.card > .content, .card > .content, .ui.card > .content{
+  padding: 0 20px;
 }
 
-.garanties .ui.segment .ui.cards > .card .table .ui.header > i.icon {
+
+.garanties.extended .ui.padded.table td{
+  padding: 0;
+}
+.garanties.extended .ui[class*="very basic"].table:not(.sortable):not(.striped) td{
+  height: 70px;
+}
+
+/* custom extended table */
+
+
+
+.garanties.extended .content.extended .ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child{
+  width: 276px;
+  padding-left: 20px;
+}
+
+.garanties.extended .content.extended .ui.basic.table tbody tr:last-child td{
+  /* padding-bottom: 20px; */
+}
+
+.ui.definition.table tr td:first-child{
+  background: #e5dfde;
+}
+
+
+/* RadioGroup td */
+
+.ui.fixed.table td{
+  overflow: visible;
+}
+
+.garanties.extended .content.extended .ui.basic.padded.table td.radioGroup{
+  padding: 0px;
+}
+
+
+.garanties.extended .content.extended td.radioGroup .ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child{
+  background: none !important;
+}
+
+.garanties.extended .content.extended td.radioGroup .ui[class*="very basic"].table:not(.sortable):not(.striped) td{
+  padding: 10px;
+}
+
+.garanties.extended .content.extended td.checkboxSimple{
+  padding-left: 10px;
+}
+
+
+.garanties.extended .content.extended .ui.basic.table td.radioGroup{
+  padding: 0;
+}
+
+
+.garanties.extended .content.extended > .ui.definition.table td.radioGroup .ui.table td:nth-child(2){
+  border-left:1px solid rgba(34, 36, 38, 0.15) !important;
+}
+
+
+
+.garanties.extended .content.extended td.radioGroup .ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child{
+  width: auto;
+}
+
+.garanties.extended .content.extended .ui.basic.table .ui.checkbox{
+  /* background: #456; */
+  height: 50px;
+  display: block;
+}
+
+/* textLabel checkbox */
+.garanties.extended .content.extended .ui.basic.table td.radioGroup label,
+.garanties.extended .content.extended .ui.basic.table td.checkboxSimple label{
+  position: absolute;
+  font-family: 'urwfranklingothicw02regular';
+  font-size: 15px;
+  font-weight: normal;
+  padding-left: 25px;
+}
+
+.garanties.extended .content.extended .ui.basic.table td.radioGroup label{
+  width: 127px;
+}
+
+.garanties.extended .content.extended .ui.basic.table td.checkboxSimple .ui.checkbox{
+  display: inline-block;
+  width: auto;
+}
+
+.garanties.extended .content.extended .ui.basic.table td.checkboxSimple label{
+  position: relative;
+}
+
+
+/* price label checkbox */
+.garanties.extended .content.extended .ui.label{
+  position: absolute;
+  font-size: 13px;
+  right:0px;
+  top: 0px;
+  background: #fff;
+  color: #103184;
+  height: 25px;
+  padding: 7px ;
+  width: 66px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.garanties.extended .content.extended .ui.basic.table td.checkboxSimple .ui.label{
+  right: -110px;
+}
+
+
+
+
+.garanties.extended .content.extended .ui.label.wide{
+  width:78px;
+}
+
+
+
+.garanties.extended .content.extended .ui.basic.table td.radioGroup .ui.radio.checked label{
+  color: #103184;
+}
+
+
+.garanties.extended .content.extended td.radioGroup .recommandation,
+.garanties.extended .content.extended td.checkboxSimple .recommandation{
+  position: absolute;
+  right:74px;
+  top: 2px;
+  width: 20px;
+}
+
+
+.garanties.extended .content.extended td.checkboxSimple .recommandation{
+  right:-38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+ .content, .card > .content.extended{
+  padding: 0px;
+}
+
+.garanties .ui.segment .card .table .ui.header > i.icon {
   font-size: 18px;
   color: #05ba1a;
 }
 
-.garanties .ui.segment .ui.cards > .card .table .ui.header.disabled > i.icon {
+.garanties.complementaires .ui.segment .card .table .ui.header > i.icon {
+  color: #b7b4b7;
+}
+
+.garanties.extended .ui.segment .card .table .ui.header.disabled > i.icon{
+  color: #e5dfde;
+}
+
+
+
+
+.garanties .ui.segment .card .table .ui.header.disabled > i.icon {
   color: #efefef;
 }
 
 
-.garanties .ui.segment .ui.cards > .card .table  h4{
+
+.garanties .ui.segment .card .table  h4{
   font-family: 'urwfranklingothicw02bold';
   font-size: 16px;
+  font-weight: normal;
 }
 
-.garanties .ui.segment .ui.cards > .card .iconInfo{
+.garanties .ui.segment .card .iconInfo{
   width: 17px;
   vertical-align: -3px;
   margin-left: 7px;
@@ -692,7 +813,7 @@ transform: scale(0.46666667); */
 
 /* .ui.cards > .card > :last-child, .ui.card > :last-child */
 
-.garanties .ui.segment .ui.cards > .card > .button{
+.garanties .ui.segment .ui.cards > .card .button{
   font-family: 'urwfranklingothicw02medium';
   font-weight: normal;
   color: #fff;
@@ -707,12 +828,13 @@ transform: scale(0.46666667); */
   border-bottom-right-radius: 5px !important;
   border-bottom-left-radius: 5px !important;
   border-bottom: 2px solid #018934;
-  width: auto;
+  /* width: auto; */
+  width: 100%;
   margin: 0;
 }
 
 
-.garanties .ui.segment > .grid > .column.legende{
+.garanties .ui.segment > .grid .column.legende{
   padding-top:20px;
 }
 
@@ -746,126 +868,11 @@ transform: scale(0.46666667); */
   font-size: 16px;
   border-radius: 0rem;
   min-width:500px;
+  z-index: 100;
 }
 
 .garanties .ui.segment .ui.popup:before {
   background: #222663;
-}
-
-
-
-/*******************************
-              Sticky
-*******************************/
-
-.garanties .ui.right.rail {
-  left:70%;
-  z-index: 5;
-  padding-top: 66px;
-  width: 200px;
-}
-
-.garanties .ui.right.rail .ui.segment {
-  padding: 15px;
-  border-radius: 0;
-  border:none;
-  margin: 0
-}
-
-.garanties .ui.right.rail .ui.segment.title {
-  background: #103184;
-  color: #fff;
-  font-size: 23px;
-}
-
-.garanties .ui.right.rail .ui.segment.title span{
-  font-size: 19px;
-}
-
-.garanties .ui.right.rail .ui.segment.title span.total{
-  font-size: 30px;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-.garanties .ui.right.rail .ui.segment.detail {
-  background: #efefef;
-  color: #333333;
-  font-size: 15px;
-  position: relative;
-  height: 57px;
-}
-
-.garanties .ui.right.rail .ui.segment.detail:hover {
-  background: #e7e6e6;
-  transition: background 0.3s;
-}
-
-.garanties .ui.right.rail .ui.segment.detail .trigger{
-  cursor:pointer;
-}
-
-
-.garanties .ui.right.rail .ui.modal .ui.segment.detail {
-  position: absolute;
-  height: 57px;
-  width:170px;
-  box-shadow: none;
-  top:0px;
-  right:0px;
-}
-
-.garanties .ui.right.rail .ui.modal .ui.segment.detail:hover {
-  background: #efefef;
-}
-
-.garanties .ui.right.rail .ui.segment.detail .ui.grid img {
-  width: 10px;
-}
-.garanties .ui.right.rail .ui.segment.detail .ui.grid > .twelve.wide.column{
-  padding-right: 0;
-}
-
-.garanties .ui.right.rail .ui.segment.couverture {
-  background: #103184;
-  color: #fff;
-  font-size: 14px;
-}
-
-.garanties .ui.right.rail .ui.segment.couverture .ui.grid {
-  font-size: 12px;
-}
-
-.garanties .ui.right.rail .ui.segment.couverture .ui.grid > .column:not(.row), .ui.grid > .row > .column{
-  padding: 0;
-}
-
-.garanties .ui.right.rail .ui.segment.couverture .ui.progress {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  background: #fff;
-}
-
-.garanties .ui.right.rail .ui.segment.couverture .ui.progress .bar {
-  height: 7px;
-  background: #1bb526;
-}
-
-
-
-.garanties .ui.right.rail .ui.segment.legende {
-  font-size: 14px;
-  color: #656565;
-  line-height: 1.2rem;
-}
-
-.garanties .ui.right.rail .ui.segment.legende img{
-  width: 15px;
-}
-
-.garanties .ui.right.rail .ui.grid > .description{
-  padding-left: 5px;
-  width: 78% !important;
 }
 
 
@@ -1005,73 +1012,6 @@ border-top: 1px dashed #cccccc;
 
 
 
-/*******************************
-          Modal Sticky
-*******************************/
-
-.ui.dimmer{
-  z-index: 4;
-  background-color: rgba(255, 255, 255, 0.85);
-}
-
-/* body.dimmed.dimmable{
-  overflow: hidden;
-position: fixed;
-  overflow-y: scroll;
-  width: 100%;
-} */
-
-.garanties .ui.right.rail .ui.modal{
-  position:absolute;
-  width: 795px;
-  top:0px;
-  left:-627px;
-  border-radius: 0;
-  box-shadow: none;
-  background: #efefef;
-  margin: 0 !important;
-  border:none;
-  padding: 30px;
-}
-
-
-.garanties .ui.right.rail .ui.modal table i{
-  font-size: 1.2em;
-  color: #ccc;
-  cursor: pointer;
-}
-
-.garanties .ui.right.rail .ui.modal table i:hover{
-  color: #103184;
-  transition: color 0.3s;
-}
-
-.garanties .ui.right.rail .ui.modal table .offer{
-  font-family: 'urwfranklingothicw02medium';
-}
-
-.garanties .ui.right.rail .ui.modal table .detailOffer, .garanties .ui.right.rail .ui.modal table .amount{
-  font-family: 'urwfranklingothicw02medium';
-  color: #103184;
-}
-
-.garanties .ui.right.rail .ui.modal .ui.basic.table tbody tr.owned td{
-border-top: 1px dashed #cccccc;
-}
-
-.garanties .ui.right.rail .ui.modal .ui.basic.table thead th{
-  padding-top: 25px;
-  font-family: 'urwfranklingothicw02medium';
-}
-
-.garanties .ui.right.rail .ui.modal .ui.basic.table thead th.first{
-  padding-top: 0px;
-}
-
-.garanties .ui.right.rail .ui.modal .ui.basic.table tr:last-child td{
-  padding-bottom: 0px;
-}
-
 
 
 
@@ -1086,17 +1026,12 @@ border-top: 1px dashed #cccccc;
 
 #avantages {
   background: #efefef;
-  margin-top: 40px;
-  padding-top:30px;
 }
 
 #avantages .ui.segment {
   padding: 30px;
 }
 
-/* #avantages .ui.segment.passedFooter {
-  padding:30px 30px 150px 30px;
-} */
 
 #avantages h2{
   font-weight: normal;
@@ -1120,10 +1055,12 @@ border-top: 1px dashed #cccccc;
 
 
 /*******************************
-            Footer
+         Footer (+cta)
 *******************************/
 
-
+#cta{
+  margin-top: 30px;
+}
 
 #footer {
   padding: 20px 0;
@@ -1147,7 +1084,7 @@ border-top: 1px dashed #cccccc;
 }
 
 
-#footer .ui.big.button{
+#footer .ui.big.button, #cta .ui.big.button {
   font-family: 'urwfranklingothicw02medium';
   font-weight: normal;
   font-size: 19px;
@@ -1155,21 +1092,21 @@ border-top: 1px dashed #cccccc;
   padding-bottom: 12px;
 }
 
-#footer .ui.button{
+#footer .ui.button, #cta .ui.button{
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-#footer .ui.green.button{
+#footer .ui.green.button, #cta .ui.green.button{
   background: #1bb526;
 }
 
-#footer .ui.green.button:hover{
+#footer .ui.green.button:hover, #cta .ui.green.button:hover{
   transition: background 0.2s;
   background: #14971d;
 }
 
-#footer .ui.button > i.icon{
+#footer .ui.button > i.icon, #cta .ui.button > i.icon{
   font-size: 14px;
 }
 
@@ -1178,9 +1115,12 @@ border-top: 1px dashed #cccccc;
   margin-bottom: 20px;
 }
 
-.stickyFooter{
-  position: fixed !important;
-  bottom:0px;
-  width: 100%;
-  z-index: 3;
+/*******************************
+            Dimmer
+*******************************/
+
+
+.ui.dimmer{
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.85);
 }

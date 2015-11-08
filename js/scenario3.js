@@ -4,14 +4,16 @@ $(document)
 
 // RADIO
 
-// $('.ui.three.cards .button')
-//   .state({
-//   text: {
-//     inactive   : 'SÉLECTIONNER',
-//     active     : 'SÉLECTIONNÉ'
-//   }
-// })
-// ;
+
+$('.checkbox')
+  .checkbox({
+    onChecked: function() {
+      console.log("callback")
+    }
+  })
+;
+
+
 
 
 
@@ -66,26 +68,7 @@ $('#footer .long.ui.modal')
 ;
 
 
-$('#footer .ui.sticky')
-  .sticky({
-    context: '.garanties'
-  })
-;
 
-
-// VISIBILITY MANAGEMENT
-$('#footer')
-  .visibility({
-    onTopVisible: function() {
-      $('.ui.right.rail').css("display", "none");
-    },
-    onBottomVisible: function() {
-        $('#footer').addClass("stickyFooter");
-        // $('#avantages').addClass("passedFooter");
-        $('#avantages').css("padding-bottom","150px");
-    }
-  })
-;
 
 })
 ;

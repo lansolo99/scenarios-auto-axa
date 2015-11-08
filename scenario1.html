@@ -220,16 +220,15 @@
         <!-- Fin Modal sticky -->
 
       </div>
-      <div class="ui segment couverture center aligned">
-        Niveau de couverture
-        <div class="ui progress" data-percent="24">
-          <div class="bar" style="transition-duration: 300ms; width: 24%;"></div>
-        </div>
-        <div class="ui equal width padded grid">
-          <div class="column">moyen</div>
-          <div class="column">bon</div>
-          <div class="column">très bon</div>
-        </div>
+      <div class="ui segment selectionneur center aligned">
+        <h5>Aide à la séléction de mes garanties</h5>
+        <button class="ui tiny fluid button tiers"><span>Niveau</span><br>« TIERS »</button>
+        <button class="ui tiny fluid button tiersEtendu">Niveau<br>« TIERS ÉTENDU »</button>
+        <button class="ui tiny fluid button tousRisques">Niveau<br>« TOUS RISQUES »</button>
+        <button class="ui tiny fluid button resetAll">Tout déséctionner</button>
+
+
+
       </div>
       <div class="ui segment legende">
         <div class="ui grid">
@@ -307,8 +306,6 @@
           </h4>
           <p>Indemnisation des préjudices corporels du conducteur</p>
 
-
-
           <div class="ui three cards">
             <div class="ui card">
               <div class="content">
@@ -319,8 +316,9 @@
               </div>
 
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui radio checkbox">
+                  <input type="radio" name="garantie_conducteur" >
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -334,8 +332,9 @@
                 <div class="ui label">54 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui radio  checkbox tiers etendu tousRisques">
+                  <input type="radio" name="garantie_conducteur">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -349,8 +348,9 @@
               </div>
               <div class="ui bottom"><div class="ui label">95 € /an</div></div>
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui radio checkbox">
+                  <input type="radio" name="garantie_conducteur">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -384,16 +384,17 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 </h4>
                 <div class="description">
                   <div class="ui bulleted list">
-                    <div class="item">En cas d’accident</div>
-                    <div class="item">De vol</div>
+                    <div class="item">en cas d’accident</div>
+                    <div class="item">de vol</div>
                     <div class="item">de panne à plus de 50km de chez vous</div>
                   </div>
                 </div>
                   <div class="ui label">14 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui radio checkbox">
+                  <input type="radio" name="assistance">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -405,16 +406,17 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 </h4>
                 <div class="description">
                   <div class="ui bulleted list">
-                    <div class="item">En cas d’accident</div>
-                    <div class="item">De vol</div>
+                    <div class="item">en cas d’accident</div>
+                    <div class="item">de vol</div>
                     <div class="item">de panne de panne où que vous soyez</div>
                   </div>
                 </div>
                 <div class="ui label">25 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui radio checkbox">
+                  <input type="radio" name="assistance">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -427,8 +429,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 </h4>
                 <div class="description">
                   <div class="ui bulleted list">
-                    <div class="item">En cas d’accident</div>
-                    <div class="item">De vol</div>
+                    <div class="item">en cas d’accident</div>
+                    <div class="item">de vol</div>
                     <div class="item">de panne de panne où que vous soyez</div>
                   </div>
                 </div>
@@ -438,8 +440,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 <div class="ui label">72 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui radio checkbox tiers etendu tousRisques">
+                  <input type="radio" name="assistance">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -461,7 +464,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
       <h4>Bris de glace
         <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
         <div class="ui fluid popup transition hidden">
-          En fonction du niveau choisi, nous prenons en charge les frais de réparation ou de remplacement des éléments vitrés endommagés pare-brise, vitres, feux avant ou toit vitré.
+          En fonction du niveau choisi, nous prenons en charge les frais de réparation ou de remplacement des éléments vitrés endommagés :pare-brise, vitres, feux avant ou toit vitré.
         </div>
       </h4>
       <p>Prise en charge des frais de réparation ou de remplacement des éléments vitrés</p>
@@ -478,8 +481,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
               <div class="ui label">16 € /an</div>
           </div>
           <div class="ui bottom attached buttons">
-            <div class="ui toggle button">
-              SÉLECTIONNER
+            <div class="ui radio checkbox">
+              <input type="radio" name="bris_glace">
+              <label><span></span></label>
             </div>
           </div>
         </div>
@@ -490,13 +494,14 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
               Niveau 2
             </h4>
             <div class="description center aligned">
-              Pare brise seul avec franchise de 70 €
+              Pare brise avec franchise de 70 €
             </div>
             <div class="ui label">21 € /an</div>
           </div>
           <div class="ui bottom attached buttons">
-            <div class="ui toggle button">
-              SÉLECTIONNER
+            <div class="ui radio checkbox">
+              <input type="radio" name="bris_glace">
+              <label><span></span></label>
             </div>
           </div>
         </div>
@@ -513,8 +518,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
             <div class="ui label">52 € /an</div>
           </div>
           <div class="ui bottom attached buttons">
-            <div class="ui toggle button">
-              SÉLECTIONNER
+            <div class="ui radio checkbox etendu tousRisques">
+              <input type="radio" name="bris_glace">
+              <label><span></span></label>
             </div>
           </div>
         </div>
@@ -541,8 +547,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
           <div class="ui label">140 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui toggle button">
-          SÉLECTIONNER
+        <div class="ui radio checkbox">
+          <input type="radio" name="accident">
+          <label><span></span></label>
         </div>
       </div>
     </div>
@@ -556,8 +563,55 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="ui label">210 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui toggle button">
-          SÉLECTIONNER
+        <div class="ui radio checkbox tousRisques">
+          <input type="radio" name="accident">
+          <label><span></span></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN D'UNE SECTION OFFRE -->
+
+  <div class="ui section divider"></div>
+
+  <!-- SECTION OFFRE -->
+  <h4>Vol, Incendie et Evénements climatiques
+    <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center" >
+    <div class="ui fluid popup transition hidden">
+      Nous vous indemnisons en cas de vol ou d’incendie de votre véhicule. En cas de vol, si votre véhicule est retrouvé, nous prenons en charge les réparations des dommages subis.<br>
+Nous vous indemnisons également pour les dommages matériels subis par votre véhicule en cas de grêle, neige, tempête, ouragan ou cyclone.
+    </div>
+  </h4>
+  <p>Indemnisation des dégâts causés à votre véhicule en cas de vol ou de tentative de vol, par un incendie et en cas d’événement climatique (hors catastrophes naturelles)</p>
+
+  <div class="ui three cards">
+    <div class="ui card">
+      <div class="content">
+        <div class="description center aligned">
+          Avec franchise de 300 €
+        </div>
+          <div class="ui label">14 € /an</div>
+      </div>
+      <div class="ui bottom attached buttons">
+        <div class="ui radio checkbox">
+          <input type="radio" name="volIncendie">
+          <label><span></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui card recommandation">
+        <img src="images/recommandation_badge.svg" class="icon-recommandation icon offerBadge"></i>
+      <div class="content">
+        <div class="description center aligned">
+          Sans franchise
+        </div>
+        <div class="ui label">20 € /an</div>
+      </div>
+      <div class="ui bottom attached buttons">
+        <div class="ui radio checkbox etendu tousRisques">
+          <input type="radio" name="volIncendie">
+          <label><span></span></label>
         </div>
       </div>
     </div>
@@ -572,7 +626,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
       <h4>Catastrophes naturelles, technologiques et attentats
         <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
         <div class="ui fluid popup transition hidden">
-          Nous vous indemnisons pour les dommages matériels subis par votre véhicule en cas de grêle, neige, tempête, ouragan ou cyclone.
+          Nous vous indemnisons pour les dommages matériels subis par votre véhicule à la suite d’une catastrophe naturelle ou technologique déclarée par arrêté ministériel au Journal Officiel, ou à la suite d’un attentat tel que défini par le Code pénal.
         </div>
         <img src="images/recommandation_badge.svg" class="iconInfo">
       </h4>
@@ -581,8 +635,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
       <div class="ui three cards">
         <div class="ui card buttonStandAlone">
           <div class="ui bottom attached buttons">
-            <div class="ui toggle button">
-              SÉLECTIONNER
+            <div class="ui checkbox etendu tousRisques">
+              <input type="checkbox" name="catastrophe">
+              <label><span></span></label>
             </div>
           </div>
         </div>
@@ -616,8 +671,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="ui three cards">
           <div class="ui card buttonStandAlone">
             <div class="ui bottom attached buttons">
-              <div class="ui toggle button">
-                SÉLECTIONNER
+              <div class="ui checkbox">
+                <input type="checkbox" name="indemnisation">
+                <label><span></span></label>
               </div>
             </div>
           </div>
@@ -641,8 +697,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
           <div class="ui three cards">
             <div class="ui card buttonStandAlone">
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui checkbox">
+                  <input type="checkbox" name="equipement_serie">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -675,8 +732,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="ui three cards">
           <div class="ui card buttonStandAlone">
             <div class="ui bottom attached buttons">
-              <div class="ui toggle button">
-                SÉLECTIONNER
+              <div class="ui checkbox">
+                <input type="checkbox" name="animaux">
+                <label><span></span></label>
               </div>
             </div>
           </div>
@@ -701,8 +759,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
           <div class="ui three cards">
             <div class="ui card buttonStandAlone">
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui checkbox">
+                  <input type="checkbox" name="effets_personnels">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -745,8 +804,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="ui three cards">
           <div class="ui card buttonStandAlone">
             <div class="ui bottom attached buttons">
-              <div class="ui toggle button">
-                SÉLECTIONNER
+              <div class="ui checkbox">
+                <input type="checkbox" name="protection_juridique">
+                <label><span></span></label>
               </div>
             </div>
           </div>
@@ -770,8 +830,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
           <div class="ui three cards">
             <div class="ui card buttonStandAlone">
               <div class="ui bottom attached buttons">
-                <div class="ui toggle button">
-                  SÉLECTIONNER
+                <div class="ui checkbox">
+                  <input type="checkbox" name="pret_volant">
+                  <label><span></span></label>
                 </div>
               </div>
             </div>
@@ -799,8 +860,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 <div class="ui label">204 € /an</div>
             </div>
             <div class="ui bottom attached buttons">
-              <div class="ui toggle button">
-                SÉLECTIONNER
+              <div class="ui radio checkbox">
+                <input type="radio" name="panne">
+                <label><span></span></label>
               </div>
             </div>
           </div>
@@ -813,8 +875,9 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
               <div class="ui label">355 € /an</div>
             </div>
             <div class="ui bottom attached buttons">
-              <div class="ui toggle button">
-                SÉLECTIONNER
+              <div class="ui radio checkbox">
+                <input type="radio" name="panne">
+                <label><span></span></label>
               </div>
             </div>
           </div>
