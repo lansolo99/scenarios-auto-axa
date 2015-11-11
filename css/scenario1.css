@@ -811,6 +811,7 @@ i.huge.icons {
 
 .ui.dimmer .ui.modal table{
   /* padding:30px; */
+  margin-bottom: 20px;
 }
 
 .ui.modal table i{

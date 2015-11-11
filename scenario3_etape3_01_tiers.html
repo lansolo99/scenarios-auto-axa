@@ -64,7 +64,7 @@
             <div class="ui large inverted breadcrumb">
               <div class="section link"><a href="scenario3.html"><span>Choisissez<br>votre formule</span></a></div>
               <i class="right chevron icon divider"></i>
-              <div class="section link"><a href="scenario3_etape2_02_tiers_etendu.html#garanties"><span>Personnalisez<br>votre formule</span></a></div>
+              <div class="section link"><a href="scenario3_etape2_01_tiers.html#garanties"><span>Personnalisez<br>votre formule</span></a></div>
               <i class="right chevron icon divider"></i>
               <div class="active section"><span>Choississez vos<br>garanties complémentaires</span></div>
             </div>
@@ -79,17 +79,7 @@
 
     <div class="row">
 
-      <div class="one wide column">
 
-        <!-- carte garantie -->
-
-          <div class="ui fluid card">
-            <div class="center aligned header"><h3>TIERS</h3>
-          </div>
-        </div>
-
-        <!-- fin de carte -->
-      </div>
 
 
 
@@ -99,9 +89,9 @@
 
         <!-- carte garantie -->
         <div class="ui fluid card">
-          <div class="header"><h3>TIERS ÉTENDU</h3>
+          <div class="header"><h3>TIERS</h3>
             <div class="labelWrapper">
-              Votre tarif personnalisé :  <div class="ui label">309 € /an</div>
+              Votre tarif personnalisé :  <div class="ui label">277 € /an</div>
             </div>
           </div>
 
@@ -109,6 +99,49 @@
           <div class="content extended">
             <table class="ui definition padded very basic unstackable table">
               <tbody>
+                <tr>
+                  <td>
+                    <h4 class="ui image header">
+                      <i class="icon-check icon"></i>
+                      <div class="content">
+                        Bris de glace <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
+                        <div class="ui popup transition hidden">
+                          En fonction du niveau choisi, nous prenons en charge les frais de réparation ou de remplacement des éléments vitrés endommagés : pare-brise, vitres, feux avant ou toit vitré.
+                        </div>
+                      </div>
+                    </h4>
+                  </td>
+                  <td class="radioGroup">
+                    <table class="ui very basic unstackable celled fixed table ">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="1">
+                              <label class="textLabel">Pare brise seul<br>avec franchise<br>70€</label>
+                              <div class="ui label" data-content="0">INCLUS</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="2">
+                              <label class="textLabel">Toutes glaces<br>avec franchise<br>70€</label>
+                              <div class="ui label" data-content="5">5 € /an</div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="ui checkbox">
+                              <input type="checkbox" name="3">
+                              <label>Toutes glaces<br>sans franchise<br>70€</label>
+                              <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
+                              <div class="ui label" data-content="72">36 € /an</div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
                 <tr>
                   <td>
                     <h4 class="ui image header">
@@ -129,21 +162,21 @@
                           <td>
                             <div class="ui checkbox">
                               <input type="checkbox" name="1">
-                              <label class="textLabel">Franchise<br>panne 50km</label>
-                              <div class="ui label" data-content="14">14 € /an</div>
+                              <label class="textLabel">Franchise panne<br>50 km</label>
+                              <div class="ui label" data-content="14">14€/an</div>
                             </div>
                           </td>
                           <td>
                             <div class="ui checkbox">
                               <input type="checkbox" name="2">
-                              <label class="textLabel">Sans<br>Franchise<br>kilomètrique</label>
-                              <div class="ui label" data-content="25">25 € /an</div>
+                              <label class="textLabel">Sans franchise<br>kilométrique</label>
+                              <div class="ui label" data-content="5">25 € /an</div>
                             </div>
                           </td>
                           <td>
                             <div class="ui checkbox">
                               <input type="checkbox" name="3">
-                              <label>Sans franchise<br>kilomètrique +<br>prêt de véhicule</label>
+                              <label>Sans franchise<br>kilométrique<br>+ prêt véhicule </label>
                               <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
                               <div class="ui label" data-content="72">72 € /an</div>
                             </div>
@@ -152,33 +185,8 @@
                       </tbody>
                     </table>
                   </td>
-                  <tr>
-                    <td>
-                      <h4 class="ui image header">
-                        <i class="icon-check icon"></i>
-                        <div class="content">
-                          Indémnisation de véhicule renforcée <img src="images/information_colored.svg" class="iconInfo pop" data-variation="inverted" data-position="top center">
-                          <div class="ui popup transition hidden" >
-                            Votre véhicule vous est remboursé :
-                            <ul>
-                              <li>à sa valeur d’achat  si le sinistre intervient durant les premières années   du véhicule (le nombre d’années est fonction du niveau choisi)</li>
-                              <li>et à sa valeur marché majorée si le sinistre intervient au-delà</li>
-                            </ul>
-                            La valeur d’achat correspond au prix auquel vous avez acheté votre véhicule.<br>
-                            La valeur marché correspond au prix auquel le véhicule aurait pu être vendu juste avant le sinistre. Elle est toujours déterminée par un expert
-                          </div>
-                        </div>
-                      </h4>
-                    </td>
-                    <td class="checkboxSimple">
-                      <div class="ui checkbox">
-                        <input type="checkbox" name="pretVolant">
-                        <label>Indemnisation en valeur à neuf 36 mois,<br> puis valeur à dire d'expert +15 %</label>
-                        <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
-                        <div class="ui label">21 € /an</div>
-                      </div>
-                    </td>
-                  </tr>
+                </tr>
+
                   <tr>
                     <td>
                       <h4 class="ui image header">
@@ -223,7 +231,7 @@
                     <td class="checkboxSimple">
                       <div class="ui checkbox">
                         <input type="checkbox" name="pretVolant">
-                      <label>Information juridique et accompagnement<br>en cas de litige lié à votre automobile</label>
+                        <label>Information juridique et accompagnement<br>en cas de litige lié à votre automobile</label>
                         <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
                         <div class="ui label">18 € /an</div>
                       </div>
@@ -313,9 +321,20 @@
         <!-- fin de carte -->
       </div>
 
+      <div class="one wide column">
+
+        <!-- carte garantie -->
+          <div class="ui fluid card">
+            <div class="header centerTitle"><h3>TIERS<br>ÉTENDU</h3>
+          </div>
+        </div>
+        <!-- fin de carte -->
+      </div>
+
 
       <div class="one wide column">
         <!-- carte garantie -->
+
 
           <div class="ui fluid card">
             <div class="header centerTitle"><h3>TOUS<br>RISQUES</h3>
@@ -329,7 +348,6 @@
     </div>
 
     <!-- legende -->
-    <div class="one wide column"></div>
     <div class="fourteen wide column legende">
       <img src="images/recommandation_badge.svg"><p>Formule recommandée par AXA en fonction de votre profil </p>
     </div>

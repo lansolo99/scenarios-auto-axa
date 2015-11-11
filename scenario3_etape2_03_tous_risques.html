@@ -69,7 +69,7 @@
     </div>
 
 <!-- GARANTIES -->
-<div id="garanties" class="garanties extended">
+<div id="garanties" class="garanties extended personnalisation">
   <div class="ui vertical segment">
     <div class="ui page grid">
 
@@ -206,7 +206,7 @@
               </tr>
               <tr>
                 <td>
-                  <h4 class="ui image header">
+                  <h4 class="ui image disabled header">
                     <i class="icon-check icon"></i>
                   </h4>
                 </td>
@@ -226,7 +226,7 @@
 
         <!-- carte garantie -->
         <div class="ui fluid card">
-          <div class="header"><h3>TIERS TOUS RISQUES</h3>
+          <div class="header"><h3>TOUS RISQUES</h3>
             <div class="labelWrapper">
               Votre tarif personnalisé :  <div class="ui label">449 € /an</div>
             </div>
@@ -285,10 +285,10 @@
                       <tbody>
                         <tr>
                           <td>
-                            <div class="ui radio checkbox">
-                              <input type="radio" name="groupConducteur">
+                            <div class="ui radio checkbox checked">
+                              <input type="radio" name="groupConducteur" checked="checked">
                               <label class="textLabel">Jusqu’à<br> 250 000 €</label>
-                              <div class="ui label">INCLUS</div>
+                              <div class="ui label" data-content="0">INCLUS</div>
                             </div>
                           </td>
                           <td>
@@ -296,14 +296,14 @@
                               <input type="radio" name="groupConducteur">
                               <label class="textLabel">Jusqu’à<br> 500 000 €</label>
                               <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
-                              <div class="ui label">29 € /an</div>
+                              <div class="ui label" data-content="29">29 € /an</div>
                             </div>
                           </td>
                           <td>
                             <div class="ui radio checkbox">
                             <input type="radio" name="groupConducteur">
                             <label>Jusqu’à<br>1 000 000 €</label>
-                            <div class="ui label">70 € /an</div>
+                            <div class="ui label" data-content="70">70 € /an</div>
                           </div>
                           </td>
                         </tr>
@@ -328,17 +328,17 @@
                     <tbody>
                       <tr>
                         <td>
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="groupBrisGlace">
+                          <div class="ui radio checkbox checked">
+                            <input type="radio" name="groupBrisGlace" checked="checked">
                             <label class="textLabel">Pare brise seul<br>avec franchise<br>70 €</label>
-                            <div class="ui label">INCLUS</div>
+                            <div class="ui label" data-content="0">INCLUS</div>
                           </div>
                         </td>
                         <td>
                           <div class="ui radio checkbox">
                             <input type="radio" name="groupBrisGlace">
                             <label class="textLabel">Toutes glaces<br>avec franchise<br>70 €</label>
-                            <div class="ui label">5 € /an</div>
+                            <div class="ui label" data-content="5">5 € /an</div>
                           </div>
                         </td>
                         <td>
@@ -346,7 +346,7 @@
                           <input type="radio" name="groupBrisGlace">
                           <label>Toute glace<br>sans franchise</label>
                           <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
-                          <div class="ui label">36 € /an</div>
+                          <div class="ui label" data-content="36">36 € /an</div>
                         </div>
                         </td>
                       </tr>
@@ -372,10 +372,10 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
                     <tbody>
                       <tr>
                         <td>
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="groupVolIncendie">
+                          <div class="ui radio checkbox checked">
+                            <input type="radio" name="groupVolIncendie" checked="checked">
                             <label class="textLabel">Avec franchise<br>300 €</label>
-                            <div class="ui label">INCLUS</div>
+                            <div class="ui label" data-content="0">INCLUS</div>
                           </div>
                         </td>
                         <td>
@@ -383,7 +383,7 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
                             <input type="radio" name="groupVolIncendie">
                             <label class="textLabel">Sans<br>franchise</label>
                             <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
-                            <div class="ui label">29 € /an</div>
+                            <div class="ui label" data-content="29">29 € /an</div>
                           </div>
                         </td>
 
@@ -428,17 +428,18 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
                     <tbody>
                       <tr>
                         <td>
-                          <div class="ui radio checkbox">
-                            <input type="radio" name="groupVolIncendie">
+                          <div class="ui radio checkbox checked">
+                            <input type="radio" name="groupDommageAccident" checked="checked">
                             <label class="textLabel">Avec franchise</label>
-                            <div class="ui label">INCLUS</div>
+                            <div class="ui label wide" data-content="0">INCLUS</div>
                           </div>
                         </td>
                         <td>
                           <div class="ui radio checkbox">
-                            <input type="radio" name="groupVolIncendie">
+                            <input type="radio" name="groupDommageAccident">
                             <label class="textLabel">Sans<br>franchise</label>
-                            <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
+                            <div class="ui label wide" data-content="210">210 €/an</div>
+                            <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation wide"></i>
                           </div>
                         </td>
 
@@ -469,9 +470,9 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
 
       <!-- CTA -->
       <div id="cta" class="sixteen wide center aligned column">
-        <a href="scenario3_etape3_02_tiers_etendu.html#garanties">
+        <a href="scenario3_etape3_03_tous_risques.html#garanties">
         <button class="big ui green button cta">
-          Choisir mes garanties complémentaires  <i class="chevron right icon"></i>
+          VALIDER ET CHOISIR MES GARANTIES COMPLEMENTAIRES  <i class="chevron right icon"></i>
         </button>
         </a>
       </div>

@@ -758,6 +758,12 @@ i.huge.icons {
   width: 20px;
 }
 
+.garanties.extended .content.extended td.radioGroup .recommandation.wide,
+.garanties.extended .content.extended td.checkboxSimple .recommandation.wide{
+  right:87px;
+}
+
+
 
 .garanties.extended .content.extended td.checkboxSimple .recommandation{
   right:-38px;
@@ -784,6 +790,7 @@ i.huge.icons {
 
 .garanties.complementaires .ui.segment .card .table .ui.header > i.icon {
   color: #b7b4b7;
+  visibility: hidden;
 }
 
 .garanties.extended .ui.segment .card .table .ui.header.disabled > i.icon{
@@ -911,7 +918,8 @@ i.huge.icons {
 }
 
 .ui.dimmer .ui.modal table{
-  padding:30px;
+  /* padding:30px; */
+  margin-bottom: 20px;
 }
 
 .ui.modal table i{
@@ -1012,6 +1020,21 @@ border-top: 1px dashed #cccccc;
 
 
 
+.ui.modal .cartTableWrapper{
+  position: relative;
+  margin-top: 50px;
+  height: 450px;
+  max-height: 450px;
+  overflow:auto;
+}
+
+.ui.dimmer .ui.modal .cartTableWrapper{
+  padding: 40px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: rgba(0,0,0,0.3);
+}
 
 
 
@@ -1123,4 +1146,11 @@ border-top: 1px dashed #cccccc;
 .ui.dimmer{
   z-index: 4;
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+body.dimmed.dimmable{
+  overflow: visible;
+  overflow-y: scroll;
+  width: 100%;
 }
