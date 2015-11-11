@@ -550,6 +550,10 @@ i.huge.icons {
   border-radius: 0;
 }
 
+.ui.cards > .card > .buttons, .ui.card > .buttons{
+  margin:0px;
+}
+
 .garanties .ui.segment .ui.cards .buttonStandAlone .ui.button{
   border-top: 0;
 }
@@ -725,7 +729,7 @@ i.huge.icons {
 }
 
 .garanties .ui.right.rail .ui.segment.selectionneur .ui.button {
-  font-family: 'urwfranklingothicw02medium';
+  font-family: 'urwfranklingothicw02regular';
   font-weight: normal;
   background: #1bb526;;
   color: #fff;
@@ -736,7 +740,9 @@ i.huge.icons {
 }
 
 .garanties .ui.right.rail .ui.segment.selectionneur .ui.button span {
-  font-family: 'urwfranklingothicw02regular';
+  font-family: 'urwfranklingothicw02medium';
+  font-weight: normal;
+  font-size: 15px;
 }
 
 .garanties .ui.right.rail .ui.segment.selectionneur .ui.button:hover{
@@ -758,6 +764,7 @@ i.huge.icons {
 
 .garanties .ui.right.rail .ui.segment.legende img{
   width: 15px;
+  height: 15px;
 }
 
 .garanties .ui.right.rail .ui.grid > .description{
@@ -1039,8 +1046,8 @@ border-top: 1px dashed #cccccc;
   padding: 0.78571429em 1.5em;
   text-align: center;
   border-top: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-  border-left: 1px solid #cccccc;
+  /* border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc; */
 }
 
 .ui.checkbox label{

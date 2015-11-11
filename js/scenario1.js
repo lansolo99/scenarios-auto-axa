@@ -46,6 +46,47 @@ $('.ui.right.rail .long.ui.modal')
 ;
 
 
+// AIDE AU CHOIX STICKY (scenario 1bis)
+
+if ( $( ".selectionneur" ).length ) {
+
+  // Set selection
+  handlerTiers = {
+    activate: function() {
+          $('.ui.card').css("border","none");
+          $('.ui.card.tiers').css("border","2px solid #1bb526");
+          }
+  };
+  handlerEtendu = {
+          activate: function() {
+            console.log("etendu");
+            $('.ui.card').css("border","none");
+            $('.ui.card.etendu').css("border","2px solid #1bb526");
+          }
+  };
+
+  handlerTousRisques = {
+          activate: function() {
+            $('.ui.card').css("border","none");
+            $('.ui.card.tousRisques').css("border","2px solid #1bb526");
+          }
+  };
+  handlerResetAll = {
+          activate: function() {
+            $('.ui.card').css("border","none");
+          }
+  };
+
+  $('.selectionneur .button.tiers').on('click', handlerTiers.activate);
+  $('.selectionneur .button.tiersEtendu').on('click', handlerEtendu.activate);
+  $('.selectionneur .button.tousRisques').on('click', handlerTousRisques.activate);
+  $('.selectionneur .button.resetAll').on('click', handlerResetAll.activate);
+
+  }
+
+
+
+
 // MODAL Souscription
 $('#footer .ui.modal')
 

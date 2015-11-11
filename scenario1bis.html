@@ -288,13 +288,13 @@
           </div>
         </div>
         <!-- Fin Modal sticky -->
-
       </div>
-      <div class="ui segment legende">
-        <div class="ui grid">
-          <div class="one wide column"><img src="images/recommandation_badge.svg"></div>
-          <div class="fourteen wide column description">Niveau de garantie recommandé par AXA suivant votre profil</div>
-        </div>
+      <div class="ui segment selectionneur center aligned">
+        <h5>Afficher<br>les garanties correspondant au  :</h5>
+        <button class="ui tiny fluid button tiers">Niveau<br>« <span>TIERS</span> »<br>à partir de 331 €/an</button>
+        <button class="ui tiny fluid button tiersEtendu">Niveau<br>« <span>TIERS ÉTENDU</span> »<br>à partir de 368 €/an</button>
+        <button class="ui tiny fluid button tousRisques">Niveau<br>« <span>TOUS RISQUES</span> »<br>à partir de 508 €/an</button>
+        <button class="ui tiny fluid button resetAll">Aucun niveau</button>
       </div>
     </div>
   </div>
@@ -383,8 +383,7 @@
               </div>
             </div>
 
-            <div class="ui card recommandation">
-                <img src="images/recommandation_badge.svg" class="icon-recommandation icon offerBadge"></i>
+            <div class="ui card tiers etendu tousRisques">
               <div class="content">
                 <div class="description center aligned">
                   Jusqu’à 500 000 €
@@ -392,7 +391,7 @@
                 <div class="ui label">54 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui radio  checkbox tiers etendu tousRisques">
+                <div class="ui radio checkbox">
                   <input type="radio" name="garantie_conducteur">
                   <label><span></span></label>
                 </div>
@@ -459,7 +458,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
               </div>
             </div>
 
-            <div class="ui card">
+            <div class="ui card tiers etendu tousRisques">
               <div class="content">
                 <h4 class="ui sub header center aligned">
                   Niveau 2
@@ -481,8 +480,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
               </div>
             </div>
 
-            <div class="ui card recommandation">
-                <img src="images/recommandation_badge.svg" class="icon-recommandation icon offerBadge"></i>
+            <div class="ui card ">
               <div class="content">
                 <h4 class="ui sub header center aligned">
                   Niveau 3
@@ -500,7 +498,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 <div class="ui label">72 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui radio checkbox tiers etendu tousRisques">
+                <div class="ui radio checkbox">
                   <input type="radio" name="assistance">
                   <label><span></span></label>
                 </div>
@@ -548,7 +546,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
           </div>
         </div>
 
-        <div class="ui card">
+        <div class="ui card etendu tousRisques">
           <div class="content">
             <h4 class="ui sub header center aligned">
               Niveau 2
@@ -566,8 +564,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
           </div>
         </div>
 
-        <div class="ui card recommandation">
-            <img src="images/recommandation_badge.svg" class="icon-recommandation icon offerBadge"></i>
+        <div class="ui card">
           <div class="content">
             <h4 class="ui sub header center aligned">
               Niveau 3
@@ -578,7 +575,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
             <div class="ui label">52 € /an</div>
           </div>
           <div class="ui bottom attached buttons">
-            <div class="ui radio checkbox etendu tousRisques">
+            <div class="ui radio checkbox">
               <input type="radio" name="bris_glace">
               <label><span></span></label>
             </div>
@@ -599,7 +596,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
   <p>Indemnisation pour les dommages en cas d’accident, choc ou vandalisme de votre véhicule</p>
 
   <div class="ui three cards">
-    <div class="ui card">
+    <div class="ui card tousRisques">
       <div class="content">
         <div class="description center aligned">
           Avec franchise de 300 €
@@ -614,8 +611,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
       </div>
     </div>
 
-    <div class="ui card recommandation">
-        <img src="images/recommandation_badge.svg" class="icon-recommandation icon offerBadge"></i>
+    <div class="ui card ">
       <div class="content">
         <div class="description center aligned">
           Sans franchise
@@ -623,7 +619,7 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="ui label">210 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui radio checkbox tousRisques">
+        <div class="ui radio checkbox">
           <input type="radio" name="accident">
           <label><span></span></label>
         </div>
@@ -645,7 +641,7 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
   <p>Indemnisation des dégâts causés à votre véhicule en cas de vol ou de tentative de vol, par un incendie et en cas d’événement climatique (hors catastrophes naturelles)</p>
 
   <div class="ui three cards">
-    <div class="ui card">
+    <div class="ui card etendu tousRisques">
       <div class="content">
         <div class="description center aligned">
           Avec franchise de 300 €
@@ -660,8 +656,7 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
       </div>
     </div>
 
-    <div class="ui card recommandation">
-        <img src="images/recommandation_badge.svg" class="icon-recommandation icon offerBadge"></i>
+    <div class="ui card ">
       <div class="content">
         <div class="description center aligned">
           Sans franchise
@@ -669,7 +664,7 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
         <div class="ui label">20 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui radio checkbox etendu tousRisques">
+        <div class="ui radio checkbox">
           <input type="radio" name="volIncendie">
           <label><span></span></label>
         </div>
@@ -688,14 +683,13 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
         <div class="ui fluid popup transition hidden">
           Nous vous indemnisons pour les dommages matériels subis par votre véhicule à la suite d’une catastrophe naturelle ou technologique déclarée par arrêté ministériel au Journal Officiel, ou à la suite d’un attentat tel que défini par le Code pénal.
         </div>
-        <img src="images/recommandation_badge.svg" class="iconInfo">
       </h4>
       <p>Indemnisation des dégâts causés à votre véhicule en cas de catastrophes naturelles et technologiques et en cas d’attentats</p>
 
       <div class="ui three cards">
-        <div class="ui card buttonStandAlone">
+        <div class="ui card buttonStandAlone etendu tousRisques">
           <div class="ui bottom attached buttons">
-            <div class="ui checkbox etendu tousRisques">
+            <div class="ui checkbox">
               <input type="checkbox" name="catastrophe">
               <label><span></span></label>
             </div>
@@ -724,7 +718,6 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
             La valeur d’achat correspond au prix auquel vous avez acheté votre véhicule.<br>
             La valeur marché correspond au prix auquel le véhicule aurait pu être vendu juste avant le sinistre. Elle est toujours déterminée par un expert
           </div>
-          <img src="images/recommandation_badge.svg" class="iconInfo">
         </h4>
         <p>Vous êtes mieux indemnisé en cas de destruction ou vol de votre véhicule</p>
 
@@ -812,7 +805,6 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
             <div class="ui fluid popup transition hidden">
               Nous indemnisons vos effets personnels tels que bagages, objets personnels et appareils de type GPS, DVD, ordinateur portable s'ils sont endommagés ou volés en même temps que votre véhicule.
             </div>
-          <img src="images/recommandation_badge.svg" class="iconInfo">
           </h4>
           <p>Indemnisation de vos bagages, objets personnels et appareils de type GPS, tablette…si votre véhicule est volé ou endommagé</p>
 
@@ -857,7 +849,6 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
               <li>tout litige vous opposant à l’assureur de votre véhicule</li>
             </ul>
           </div>
-          <img src="images/recommandation_badge.svg" class="iconInfo">
         </h4>
         <p>Information juridique et accompagnement en cas de litige lié à votre automobile</p>
 
