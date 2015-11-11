@@ -4,12 +4,35 @@ $(document)
 
 // RADIO
 
+
+
 $('.checkbox')
   .checkbox({
     onChecked: function() {
+
     }
   })
 ;
+
+
+
+
+// Tiers
+$('.checkbox').checkbox('attach events', '.tiers.button', 'uncheck');
+$('.tiers.checkbox').checkbox('attach events', '.tiers.button', 'check');
+
+// Tiers etendu
+$('.checkbox').checkbox('attach events', '.tiersEtendu.button', 'uncheck');
+$('.etendu.checkbox').checkbox('attach events', '.tiersEtendu.button', 'check');
+
+// Tous risques
+$('.checkbox').checkbox('attach events', '.tousRisques.button', 'uncheck');
+$('.tousRisques.checkbox').checkbox('attach events', '.tousRisques.button', 'check');
+
+
+// Reset
+$('.checkbox').checkbox('attach events', '.resetAll.button', 'uncheck');
+
 
 
 // POPUP
@@ -47,7 +70,7 @@ $('.ui.right.rail .long.ui.modal')
 
 
 // MODAL Souscription
-$('#footer .ui.modal')
+$('#footer .long.ui.modal')
 
   .modal({
           detachable: true,
@@ -77,11 +100,16 @@ $('#footer .ui.sticky')
 // VISIBILITY MANAGEMENT
 $('#footer')
   .visibility({
+    // onTopVisible: function() {
+    //   $('.ui.right.rail').css("display", "none");
+    // },
     onBottomVisible: function() {
         $('#footer').addClass("stickyFooter");
+        // $('#avantages').addClass("passedFooter");
         $('#avantages').css("padding-bottom","150px");
     }
   })
 ;
+
 })
 ;

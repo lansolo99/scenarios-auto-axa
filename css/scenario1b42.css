@@ -748,6 +748,7 @@ i.huge.icons {
 }
 
 
+
 .garanties .ui.right.rail .ui.segment.legende {
   font-size: 14px;
   color: #656565;
@@ -762,6 +763,8 @@ i.huge.icons {
   padding-left: 5px;
   width: 78% !important;
 }
+
+
 
 
 
@@ -801,7 +804,7 @@ i.huge.icons {
 }
 
 .ui.dimmer .ui.modal table{
-  /* padding:30px; */
+  padding:30px;
 }
 
 .ui.modal table i{
@@ -822,16 +825,6 @@ i.huge.icons {
 
 .ui.modal table .offer{
   font-family: 'urwfranklingothicw02medium';
-  width: 266px;
-}
-
-.ui.modal table .detailOffer{
-  width: 182px;
-}
-
-.ui.modal table td.amount{
-  font-family: 'urwfranklingothicw02medium';
-  width: 80px;
 }
 
 .ui.modal table .detailOffer, #footer .ui.modal table .amount{
@@ -855,22 +848,6 @@ border-top: 1px dashed #cccccc;
 .ui.modal .ui.basic.table tr:last-child td{
   padding-bottom: 0px;
 }
-
-
-.ui[class*="very basic"].table:not(.sortable):not(.striped) td:first-child{
-  width: 237px;
-}
-
-.ui.modal .ui[class*="very basic"].table:not(.sortable):not(.striped) td:last-child{
-width: 50px;
-}
-
-
-.ui.modal .ui.table tr:first-child td{
-  line-height: 1.3em;
-}
-
-
 
 .ui.modal .footer {
   text-align: center;
@@ -937,39 +914,24 @@ width: 50px;
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-body.dimmed.dimmable{
-  overflow: visible;
+/* body.dimmed.dimmable{
+  overflow: hidden;
+position: fixed;
   overflow-y: scroll;
   width: 100%;
-}
+} */
 
 .garanties .ui.right.rail .ui.modal{
   position:absolute;
-  width: 840px;
-  top:0px !important;
-  left:-672px;
+  width: 795px;
+  top:0px;
+  left:-627px;
   border-radius: 0;
   box-shadow: none;
   background: #efefef;
   margin: 0 !important;
   border:none;
   padding: 30px;
-  overflow: hidden;
-}
-
-.ui.modal .cartTableWrapper{
-  position: relative;
-  margin-top: 50px;
-  max-height: 450px;
-  overflow:auto;
-}
-
-.ui.dimmer .ui.modal .cartTableWrapper{
-  padding: 30px;
-}
-
-.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-  background-color: rgba(0,0,0,0.3);
 }
 
 
@@ -991,7 +953,6 @@ body.dimmed.dimmable{
 .garanties .ui.right.rail .ui.modal table .detailOffer, .garanties .ui.right.rail .ui.modal table .amount{
   font-family: 'urwfranklingothicw02medium';
   color: #103184;
-  text-align: right;
 }
 
 .garanties .ui.right.rail .ui.modal .ui.basic.table tbody tr.owned td{
