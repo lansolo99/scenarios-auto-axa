@@ -961,6 +961,7 @@ body.dimmed.dimmable{
 .ui.modal .cartTableWrapper{
   position: relative;
   margin-top: 50px;
+  height: 450px;
   max-height: 450px;
   overflow:auto;
 }
