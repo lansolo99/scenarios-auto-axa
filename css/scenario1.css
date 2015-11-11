@@ -712,6 +712,7 @@ i.huge.icons {
 
 .garanties .ui.right.rail .ui.segment.detail .ui.grid img {
   width: 10px;
+  height: 10px;
 }
 .garanties .ui.right.rail .ui.segment.detail .ui.grid > .twelve.wide.column{
   padding-right: 0;
