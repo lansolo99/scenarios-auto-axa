@@ -291,10 +291,20 @@
       </div>
       <div class="ui segment selectionneur center aligned">
         <h5>Afficher<br>les garanties correspondant au  :</h5>
-        <button class="ui tiny fluid button tiers">Niveau<br>« <span>TIERS</span> »<br>à partir de 331 €/an</button>
-        <button class="ui tiny fluid button tiersEtendu">Niveau<br>« <span>TIERS ÉTENDU</span> »<br>à partir de 368 €/an</button>
-        <button class="ui tiny fluid button tousRisques">Niveau<br>« <span>TOUS RISQUES</span> »<br>à partir de 508 €/an</button>
-        <button class="ui tiny fluid button resetAll">Aucun niveau</button>
+
+        <div class="ui checkbox tiers">
+          <input type="checkbox" name="garantie_conducteur" >
+          <label>Niveau<br>« <span>TIERS</span> »<br>à partir de 331 €/an</label>
+        </div>
+        <div class="ui checkbox tiersEtendu">
+          <input type="checkbox" name="garantie_conducteur" >
+          <label>Niveau<br>« <span>TIERS ÉTENDU</span> »<br>à partir de 368 €/an</label>
+        </div>
+        <div class="ui checkbox tousRisques">
+          <input type="checkbox" name="garantie_conducteur" >
+          <label>Niveau<br>« <span>TOUS RISQUES</span> »<br>à partir de 508 €/an</label>
+        </div>
+
       </div>
     </div>
   </div>
@@ -376,8 +386,8 @@
               </div>
 
               <div class="ui bottom attached buttons">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="garantie_conducteur" >
+                <div class="ui checkbox">
+                  <input type="checkbox" name="garantie_conducteur" >
                   <label><span></span></label>
                 </div>
               </div>
@@ -391,8 +401,8 @@
                 <div class="ui label">54 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="garantie_conducteur">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="garantie_conducteur">
                   <label><span></span></label>
                 </div>
               </div>
@@ -407,8 +417,8 @@
               </div>
               <div class="ui bottom"><div class="ui label">95 € /an</div></div>
               <div class="ui bottom attached buttons">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="garantie_conducteur">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="garantie_conducteur">
                   <label><span></span></label>
                 </div>
               </div>
@@ -451,8 +461,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                   <div class="ui label">14 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="assistance">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="assistance">
                   <label><span></span></label>
                 </div>
               </div>
@@ -473,8 +483,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 <div class="ui label">25 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="assistance">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="assistance">
                   <label><span></span></label>
                 </div>
               </div>
@@ -498,8 +508,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
                 <div class="ui label">72 € /an</div>
               </div>
               <div class="ui bottom attached buttons">
-                <div class="ui radio checkbox">
-                  <input type="radio" name="assistance">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="assistance">
                   <label><span></span></label>
                 </div>
               </div>
@@ -539,8 +549,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
               <div class="ui label">16 € /an</div>
           </div>
           <div class="ui bottom attached buttons">
-            <div class="ui radio checkbox">
-              <input type="radio" name="bris_glace">
+            <div class="ui checkbox">
+              <input type="checkbox" name="bris_glace">
               <label><span></span></label>
             </div>
           </div>
@@ -557,8 +567,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
             <div class="ui label">21 € /an</div>
           </div>
           <div class="ui bottom attached buttons">
-            <div class="ui radio checkbox">
-              <input type="radio" name="bris_glace">
+            <div class="ui checkbox">
+              <input type="checkbox" name="bris_glace">
               <label><span></span></label>
             </div>
           </div>
@@ -575,8 +585,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
             <div class="ui label">52 € /an</div>
           </div>
           <div class="ui bottom attached buttons">
-            <div class="ui radio checkbox">
-              <input type="radio" name="bris_glace">
+            <div class="ui checkbox">
+              <input type="checkbox" name="bris_glace">
               <label><span></span></label>
             </div>
           </div>
@@ -604,8 +614,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
           <div class="ui label">140 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui radio checkbox">
-          <input type="radio" name="accident">
+        <div class="ui checkbox">
+          <input type="checkbox" name="accident">
           <label><span></span></label>
         </div>
       </div>
@@ -619,8 +629,8 @@ Nous prenons en charge l’organisation et les frais de taxi, train ou avion pou
         <div class="ui label">210 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui radio checkbox">
-          <input type="radio" name="accident">
+        <div class="ui checkbox">
+          <input type="checkbox" name="accident">
           <label><span></span></label>
         </div>
       </div>
@@ -649,8 +659,8 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
           <div class="ui label">14 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui radio checkbox">
-          <input type="radio" name="volIncendie">
+        <div class="ui checkbox">
+          <input type="checkbox" name="volIncendie">
           <label><span></span></label>
         </div>
       </div>
@@ -664,8 +674,8 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
         <div class="ui label">20 € /an</div>
       </div>
       <div class="ui bottom attached buttons">
-        <div class="ui radio checkbox">
-          <input type="radio" name="volIncendie">
+        <div class="ui checkbox">
+          <input type="checkbox" name="volIncendie">
           <label><span></span></label>
         </div>
       </div>
@@ -902,6 +912,9 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
         </h4>
         <p>Si votre véhicule tombe en panne, les pièces et la main-d’œuvre sont prises en charge</p>
 
+
+
+
         <div class="ui three cards">
           <div class="ui card">
             <div class="content">
@@ -911,8 +924,8 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
                 <div class="ui label">204 € /an</div>
             </div>
             <div class="ui bottom attached buttons">
-              <div class="ui radio checkbox">
-                <input type="radio" name="panne">
+              <div class="ui checkbox">
+                <input type="checkbox" name="panne">
                 <label><span></span></label>
               </div>
             </div>
@@ -926,8 +939,8 @@ Nous vous indemnisons également pour les dommages matériels subis par votre v�
               <div class="ui label">355 € /an</div>
             </div>
             <div class="ui bottom attached buttons">
-              <div class="ui radio checkbox">
-                <input type="radio" name="panne">
+              <div class="ui checkbox">
+                <input type="checkbox" name="panne">
                 <label><span></span></label>
               </div>
             </div>

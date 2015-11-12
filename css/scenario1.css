@@ -554,9 +554,6 @@ i.huge.icons {
   margin:0px;
 }
 
-.garanties .ui.segment .ui.cards .buttonStandAlone .ui.button{
-  border-top: 0;
-}
 
 .garanties .ui.segment .ui.three.cards .ui.segment.sideNote{
   padding: 0;
@@ -728,6 +725,7 @@ i.huge.icons {
   font-size: 14px;
 }
 
+
 .garanties .ui.right.rail .ui.segment.selectionneur .ui.button {
   font-family: 'urwfranklingothicw02regular';
   font-weight: normal;
@@ -749,6 +747,37 @@ i.huge.icons {
   transition: background 0.2s;
   background: #14971d;
 }
+
+
+.garanties .ui.right.rail .ui.segment.selectionneur .ui.checkbox label {
+  font-family: 'urwfranklingothicw02regular';
+  font-weight: normal;
+  background: #1bb526;;
+  color: #fff;
+  line-height: 16px;
+  padding: 6px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  border-top: 0px;
+  font-size: 13px;
+}
+
+.garanties .ui.right.rail .ui.segment.selectionneur .ui.checkbox.checked label {
+  background: #14971d;
+}
+
+.garanties .ui.right.rail .ui.segment.selectionneur .ui.checkbox span {
+  font-family: 'urwfranklingothicw02medium';
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.garanties .ui.right.rail .ui.segment.selectionneur .ui.checkbox label:hover{
+  transition: background 0.2s;
+  background: #14971d;
+}
+
 
 .garanties .ui.right.rail h5{
   font-family: 'urwfranklingothicw02regular';
@@ -1051,12 +1080,15 @@ border-top: 1px dashed #cccccc;
   border-left: 1px solid #cccccc; */
 }
 
-.ui.checkbox label{
-  border-top: none;
-
+.ui.three.cards .ui.checkbox label{
+  border-top: 1px solid #cccccc;
 }
 
-.ui.checkbox label > span:before{
+.garanties .ui.segment .ui.cards .buttonStandAlone .ui.checkbox label{
+  border-top: 0;
+}
+
+.ui.three.cards .ui.checkbox label > span:before{
   content: "SÉLECTIONNER";
 }
 
@@ -1066,8 +1098,12 @@ border-top: 1px dashed #cccccc;
   transition: background 0.2s;
 }
 
-.ui.radio.checked label > span:before, .ui.checkbox.checked label > span:before{
+.ui.three.cards .ui.checkbox.checked label > span:before, .ui.checkbox.checked label > span:before{
   content: "SÉLECTIONNÉ";
+}
+
+.selectionneur .ui.checkbox.checked label > span:before, .ui.checkbox.checked label > span:before{
+  content: "";
 }
 
 

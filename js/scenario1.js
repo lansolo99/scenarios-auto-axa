@@ -2,14 +2,74 @@ $(document)
   .ready(function() {
 
 
-// RADIO
+// RADIO GARANTIES
 
-$('.checkbox')
+$('.ui.three.cards .ui.checkbox')
   .checkbox({
-    onChecked: function() {
+    onChange: function() {
+
+      var group = $(this).parent().parent().parent().parent().parent().find('.ui.checkbox');
+      var me = $(this).parent();
+      var others = $(group).not(me);
+
+      if( $(this).checkbox('is unchecked')){
+            $(others).checkbox('set unchecked');
+
+      }
     }
+
   })
 ;
+
+// RADIO SELECTIONNEUR DE GARANTIES
+
+$('.selectionneur .ui.checkbox')
+  .checkbox({
+    onChange: function() {
+
+      var group = $(this).parent().parent().find('.ui.checkbox');
+      var me = $(this).parent();
+      var others = $(group).not(me);
+
+      if( $(this).checkbox('is unchecked')){
+            $(others).checkbox('set unchecked');
+
+      }
+
+      if ( $( ".selectionneur" ).length ) {
+
+            if( $(me).hasClass('checked')){
+                // is not checked
+
+                $('.ui.card').css("border","none");
+
+                if( $(me).hasClass('tiers')){
+                  $('.ui.card.tiers').css("border","2px solid #1bb526");
+                }
+                if( $(me).hasClass('tiersEtendu')){
+                  $('.ui.card.etendu').css("border","2px solid #1bb526");
+                }
+                if( $(me).hasClass('tousRisques')){
+                  $('.ui.card.tousRisques').css("border","2px solid #1bb526");
+                }
+            }else{
+              // is already checked
+              $('.ui.card').css("border","none");
+
+            }
+
+          }
+    }
+
+  })
+;
+
+
+
+
+
+
+
 
 
 // POPUP
@@ -77,10 +137,13 @@ if ( $( ".selectionneur" ).length ) {
           }
   };
 
-  $('.selectionneur .button.tiers').on('click', handlerTiers.activate);
-  $('.selectionneur .button.tiersEtendu').on('click', handlerEtendu.activate);
-  $('.selectionneur .button.tousRisques').on('click', handlerTousRisques.activate);
-  $('.selectionneur .button.resetAll').on('click', handlerResetAll.activate);
+  // $('.selectionneur .checkbox.tiers').on('click', handlerTiers.activate);
+  // $('.selectionneur .checkbox.tiersEtendu').on('click', handlerEtendu.activate);
+  // $('.selectionneur .checkbox.tousRisques').on('click', handlerTousRisques.activate);
+  // $('.selectionneur .checkbox.resetAll').on('click', handlerResetAll.activate);
+
+
+
 
   }
 
