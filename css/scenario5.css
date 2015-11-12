@@ -1,0 +1,682 @@
+/*******************************
+             Fonts
+*******************************/
+
+
+@font-face {
+    font-family: 'urwfranklingothicw02light';
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-light-webfont.eot');
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-light-webfont.woff2') format('woff2'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-light-webfont.woff') format('woff'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-light-webfont.ttf') format('truetype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-light-webfont.svg#urwfranklingothicw02light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'urwfranklingothicw02bold';
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-demi-webfont.eot');
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-demi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-demi-webfont.woff2') format('woff2'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-demi-webfont.woff') format('woff'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-demi-webfont.ttf') format('truetype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-demi-webfont.svg#urwfranklingothicw02bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'urwfranklingothicw02regular';
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-book-webfont.eot');
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-book-webfont.woff2') format('woff2'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-book-webfont.woff') format('woff'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-book-webfont.ttf') format('truetype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-book-webfont.svg#urwfranklingothicw02regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'urwfranklingothicw02medium';
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-medium-webfont.eot');
+    src: url('themes/default/assets/fonts/urwfranklingothicw02-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-medium-webfont.woff2') format('woff2'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-medium-webfont.woff') format('woff'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-medium-webfont.ttf') format('truetype'),
+         url('themes/default/assets/fonts/urwfranklingothicw02-medium-webfont.svg#urwfranklingothicw02medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*******************************
+        Custom icon font
+*******************************/
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('themes/default/assets/fonts/icomoon.eot?dayh7z');
+	src:url('themes/default/assets/fonts/icomoon.eot?dayh7z#iefix') format('embedded-opentype'),
+		url('themes/default/assets/fonts/icomoon.ttf?dayh7z') format('truetype'),
+		url('themes/default/assets/fonts/icomoon.woff?dayh7z') format('woff'),
+		url('themes/default/assets/fonts/icomoon.svg?dayh7z#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+i.icon.icon-adjustement:before {
+	content: "\e900";
+}
+i.icon.icon-assistance:before {
+	content: "\e901";
+}
+i.icon.icon-budget:before {
+	content: "\e902";
+}
+i.icon.icon-check:before {
+	content: "\e903";
+}
+i.icon.icon-conducteur:before {
+	content: "\e904";
+}
+i.icon.icon-cross:before {
+	content: "\e905";
+}
+i.icon.icon-garanties_minimum:before {
+	content: "\e906";
+}
+i.icon.icon-information_colored .path1:before {
+	content: "\e907";
+	color: rgb(255, 255, 255);
+}
+i.icon.icon-information_colored .path2:before {
+	content: "\e908";
+	margin-left: -1em;
+	color: rgb(73, 72, 73);
+}
+i.icon.icon-information_outlined:before {
+	content: "\e909";
+}
+i.icon.icon-information:before {
+	content: "\e90a";
+}
+i.icon.icon-locker:before {
+	content: "\e90b";
+}
+i.icon.icon-recommandation:before {
+	content: "\e90c";
+}
+i.icon.icon-transport:before {
+	content: "\e90d";
+}
+i.icon.icon-trash:before {
+	content: "\e90e";
+}
+i.icon.icon-ugly_arrow:before {
+	content: "\e90f";
+}
+i.icon.icon-vehicule:before {
+	content: "\e910";
+}
+
+
+
+
+/*******************************
+            Globals
+*******************************/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'urwfranklingothicw02regular', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'urwfranklingothicw02bold', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  line-height: 1.2857em;
+  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  font-weight: bold;
+  padding: 0em;
+  font-weight: normal;
+}
+
+
+
+/*-----------------------
+       Page Grid
+-------------------------*/
+
+
+@media only screen and (min-width: 320px) {
+  .ui.page.grid {
+    width: 997px;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin:auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+/*******************************
+            Header
+*******************************/
+
+header > .ui.grid > .row{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header > .ui.grid > .row > .column {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#logo img {
+  width: 128px;
+}
+
+#baseline{
+  width: 380px;
+  height: 38px;
+}
+
+header .ui.segment {
+    position: relative;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+}
+
+
+/*******************************
+            Master title
+*******************************/
+
+#masterTitle {
+  background: #103184;
+  padding: 30px 0px;
+}
+
+#masterTitle h1 {
+  font-family: 'urwfranklingothicw02light';
+  font-size: 27px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+#masterTitle #second_title {
+  font-family: 'urwfranklingothicw02medium';
+  font-size: 19px;
+  font-weight: normal;
+}
+
+#masterTitle .ui.grid > .row{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#masterTitle .ui.grid > .column:not(.row), .ui.grid > .row > .column.main_title_col {
+padding-left: 20px;
+}
+
+#masterTitle .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+  padding-left: 0;
+}
+
+#masterTitle .icon_col > i.icon {
+  font-family: 'icomoon';
+  color: #fff;
+}
+
+#masterTitle .ui.grid > .row > .column.icon_col {
+  padding-right: 1.5rem;
+  padding-top: 10px;
+}
+
+
+
+
+
+/*******************************
+        Garanties tables
+*******************************/
+
+
+.ui.table {
+  margin-bottom:40px !important;
+  border-radius: 0;
+}
+
+.ui.table, .ui.table tr, .ui.table tr td, .ui.table thead th  {
+  border: 0;
+}
+
+.ui.padded.table th{
+  text-align: center;
+}
+
+.ui.table tr td{
+  width: 123px;
+  text-align: center;
+}
+
+.ui.table tr td:first-child{
+  width: 300px;
+  border-right: 967;
+  text-align: left;
+}
+
+
+.garanties .ui.segment i.icon {
+  font-family: 'icomoon';
+}
+
+i.huge.icon,
+i.huge.icons {
+  line-height: 1;
+  vertical-align: middle;
+  font-size: 3em;
+}
+
+.garanties{
+  position: relative;
+  margin: auto;
+}
+
+.garanties .ui.segment {
+  padding: 40px 0px 40px 0px;
+}
+
+.garanties .ui.segment h2{
+  font-family: 'urwfranklingothicw02medium';
+  font-weight: normal;
+  margin: auto;
+  text-align: center;
+  color: #103184;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.garanties .ui.segment  h4{
+  color: #333333;
+  -webkit-margin-before: 0em;
+  font-size: 16px;
+}
+
+
+.garanties .ui.segment > .grid > .column {
+  padding:0;
+}
+
+
+.ui.divided.grid:not([class*="vertically divided"]) > .column:not(.row),
+.ui.divided.grid:not([class*="vertically divided"]) > .row > .column {
+  box-shadow: -2px 0px 0px 0px rgba(34, 36, 38, 0.5);
+}
+
+.ui.divided.grid:not([class*="vertically divided"]) > .column:first-child,
+.ui.divided.grid:not([class*="vertically divided"]) > .row > .column:first-child {
+  box-shadow: none;
+}
+
+
+
+.ui.button:hover {
+  background-color: #18a422 !important;
+}
+
+
+.ui[class*="bottom attached"].buttons {
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button:first-child {
+  border-radius: 0;
+}
+
+.ui[class*="bottom attached"].buttons .button:last-child {
+  border-radius: 0;
+}
+
+.garanties .ui.segment .ui.cards .buttonStandAlone .ui.button{
+  border-top: 0;
+}
+
+
+.garanties .ui.segment .recommandation{
+  position:relative;
+}
+.garanties .ui.segment .recommandation:before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:2px;
+    background:#1bb526;
+    top:-2px;
+    left:0;
+}
+
+.garanties .ui.segment .offerBadge{
+  position: absolute;
+  top:-20px;
+  left:calc(50% - 10px);
+  width: 35px;
+  z-index: 3;
+}
+
+
+
+.garanties.extended .ui.padded.table td{
+  padding: 0;
+}
+
+
+
+
+/*******************************
+          Modal CTA
+*******************************/
+
+
+.ui.modal{
+
+  /* width: auto; */
+  min-width: 795px;
+  border-radius: 0;
+  box-shadow: none;
+  background: #efefef;
+  border:none;
+  padding: 0px;
+}
+
+.ui.modal .ui.segment.close {
+  position: absolute;
+  width:15px;
+  box-shadow: none;
+  background: none;
+  top:20px;
+  right:20px;
+  border: none;
+  border-radius: none;
+}
+
+
+
+.ui.modal .ui.segment.close:hover {
+  background: #efefef;
+}
+
+.ui.dimmer .ui.modal table{
+  /* padding:30px; */
+  margin-bottom: 20px;
+}
+
+.ui.modal table i{
+  font-size: 1.2em;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.ui.modal table i.icon{
+  font-family: 'icomoon';
+}
+
+
+.ui.modal table i:hover{
+  color: #103184;
+  transition: color 0.3s;
+}
+
+.ui.modal table .offer{
+  font-family: 'urwfranklingothicw02medium';
+}
+
+.ui.modal table .detailOffer, #footer .ui.modal table .amount{
+  font-family: 'urwfranklingothicw02medium';
+  color: #103184;
+}
+
+.ui.modal .ui.basic.table tbody tr.owned td{
+border-top: 1px dashed #cccccc;
+}
+
+.ui.dimmer .ui.modal .ui.basic.table thead th{
+  padding-top: 25px;
+  font-family: 'urwfranklingothicw02medium';
+}
+
+.ui.modal .ui.basic.table thead th.first{
+  padding-top: 0px;
+}
+
+.ui.modal .ui.basic.table tr:last-child td{
+  padding-bottom: 0px;
+}
+
+.ui.modal .footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  margin:auto;
+  background: #103184;
+}
+
+.ui.modal .footer h3{
+  display: block;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'urwfranklingothicw02regular';
+  /* margin-bottom: 20px; */
+}
+
+.ui.modal .footer h3 span{
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+
+.ui.modal .footer .ui.big.button{
+  font-family: 'urwfranklingothicw02medium';
+  font-weight: normal;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+
+.garanties .ui.right.rail .ui.modal .footer .ui.button{
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.ui.modal .footer .ui.green.button{
+  background: #1bb526;
+}
+
+.ui.modal .footer .ui.green.button:hover{
+  transition: background 0.2s;
+  background: #14971d;
+}
+
+.ui.modal .footer .ui.button > i.icon{
+  font-size: 14px;
+}
+
+.ui.modal .footer .ui.section.divider{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+
+.ui.modal .cartTableWrapper{
+  position: relative;
+  margin-top: 50px;
+  height: 450px;
+  max-height: 450px;
+  overflow:auto;
+}
+
+.ui.dimmer .ui.modal .cartTableWrapper{
+  padding: 40px;
+}
+
+.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+/*******************************
+           Avantages
+*******************************/
+
+
+
+#avantages {
+  background: #efefef;
+}
+
+#avantages .ui.segment {
+  padding: 30px;
+}
+
+
+#avantages h2{
+  font-weight: normal;
+    font-family: 'urwfranklingothicw02medium';
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#avantages i.icon{
+  font-family: 'icomoon';
+  color: #acaeb4;
+}
+
+#avantages h4{
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*******************************
+         Footer (+cta)
+*******************************/
+
+#cta{
+  margin-top: 30px;
+}
+
+#footer {
+  padding: 20px 0;
+  color: #fff;
+  margin:auto;
+  background: #103184;
+}
+
+#footer h3{
+  display: block;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'urwfranklingothicw02regular';
+  /* margin-bottom: 20px; */
+}
+
+#footer h3 span{
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+
+#footer .ui.big.button, #cta .ui.big.button {
+  font-family: 'urwfranklingothicw02medium';
+  font-weight: normal;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+
+#footer .ui.button, #cta .ui.button{
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#footer .ui.green.button, #cta .ui.green.button{
+  background: #1bb526;
+}
+
+#footer .ui.green.button:hover, #cta .ui.green.button:hover{
+  transition: background 0.2s;
+  background: #14971d;
+}
+
+#footer .ui.button > i.icon, #cta .ui.button > i.icon{
+  font-size: 14px;
+}
+
+#footer .ui.section.divider{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/*******************************
+            Dimmer
+*******************************/
+
+
+.ui.dimmer{
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+body.dimmed.dimmable{
+  overflow: visible;
+  overflow-y: scroll;
+  width: 100%;
+}
