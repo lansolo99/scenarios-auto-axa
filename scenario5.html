@@ -58,18 +58,78 @@
   <div class="ui vertical segment">
     <div class="ui page relaxed grid">
 
-      <div class="sixteen wide column title">
+      <div id="niveauxGaranties" class="sixteen wide column title">
         <h2>CHOISISSEZ VOTRE FORMULE</h2>
 
+        <!-- TABLE NIVEAUX DE GARANTIES -->
         <table class="ui padded striped unstackable table">
           <thead>
             <tr>
               <th></th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
-              <th>Header</th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TIERS</span></div>
+                  <div class="price">291 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TIERS<br>ESSENTIEL</span></div>
+                <div class="price">307 €<br><span>par an</span></div>
+              </th>
+              <th class="recommandation">
+                <img src="images/recommandation_badge.svg" class="icon-recommandation icon offerBadge"></i>
+                <span class="active"></span>
+                <div class="level"><span>TIERS<br>ÉTENDU</span></div>
+                <div class="price">323 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TOUS<br>RISQUES</span></div>
+                <div class="price">463 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TOUS RISQUES<br>ÉTENDU</span></div>
+                <div class="price">473 €<br><span>par an</span></div>
+              </th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tiers">
+                  <input type="radio" name="garantieTop" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tiersEssentiel">
+                  <input type="radio" name="garantieTop" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox checked tiersEtendu">
+                  <input type="radio" name="garantieTop" checked="checked">
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tousRisques">
+                  <input type="radio" name="garantieTop" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tousRisquesEtendu">
+                  <input type="radio" name="garantieTop" >
+                  <label><span></span></label>
+                </div>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -78,30 +138,263 @@
                 <h4>Responsabilité civile, Défense
                 Pénale et Recours suite à Accident</h4>
               </td>
-              <td><i class="icon-check icon"></i></td>
-              <td><i class="icon-check icon"></i></td>
-              <td><i class="icon-check icon"></i></td>
-              <td><i class="icon-check icon"></i></td>
-              <td><i class="icon-check icon"></i></td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
             </tr>
-            <td>
-              <h4>Responsabilité civile, Défense
-              Pénale et Recours suite à Accident</h4>
-            </td>
-            <td><i class="icon-check icon"></i></td>
-            <td><i class="icon-check icon"></i></td>
-            <td><i class="icon-check icon"></i></td>
-            <td><i class="icon-check icon"></i></td>
-            <td><i class="icon-check icon"></i></td>
-          </tr>
+            <tr>
+              <td>
+                <h4>Joker <span>(sans antécédent -25 ans)</span></h4>
+              </td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Sécurité du conducteur <span>(250 000 €)</span></h4>
+              </td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Assistance en moins d’1H 24H/24<br>
+                <span>(franchise 50 km en cas de panne)</span></h4>
+              </td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Incendie, Vol, Attentats, Évènements
+                climatiques, Catastrophes Naturelles<br>
+                et technologique</h4>
+              </td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Bris de pare-brise</h4>
+              </td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Dommages tous accidents</h4>
+              </td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Valeur à neuf 12 mois</h4>
+              </td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
           </tbody>
+          <thead>
+            <tr>
+              <th class="legende">
+                <div class="ui grid legende">
+                  <div class="one wide column"><img src="images/recommandation_badge.svg"></div>
+                  <div class="fourteen wide column description">Niveau de garantie<br>recommandé par AXA<br> suivant votre profil</div>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TIERS</span></div>
+                <div class="price">291 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TIERS<br>ESSENTIEL</span></div>
+                <div class="price">307 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TIERS<br>ÉTENDU</span></div>
+                <div class="price">323 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TOUS<br>RISQUES</span></div>
+                <div class="price">463 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>TOUS RISQUES<br>ÉTENDU</span></div>
+                <div class="price">473 €<br><span>par an</span></div>
+              </th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tiers">
+                  <input type="radio" name="garantieBottom" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tiersEssentiel">
+                  <input type="radio" name="garantieBottom" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox checked tiersEtendu">
+                  <input type="radio" name="garantieBottom" checked="checked">
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tousRisques">
+                  <input type="radio" name="garantieBottom" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox tousRisquesEtendu">
+                  <input type="radio" name="garantieBottom" >
+                  <label><span></span></label>
+                </div>
+              </th>
+            </tr>
+          </thead>
+        </table>
+        <!-- FIN TABLE NIVEAUX DE GARANTIES -->
+      </div>
+
+      <div id="packs" class="sixteen wide column title">
+        <h2>CHOISISSEZ VOTRE PACK</h2>
+
+
+        <!-- TABLE PACKS -->
+        <table class="ui padded striped unstackable table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>INITIAL</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>ÉQUILIBRE</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>CONFORT</span></div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <h4>Sécurité du conducteur</h4>
+              </td>
+              <td><span class="active"></span>450 000 €</td>
+              <td><span class="active"></span>450 000 €</td>
+              <td><span class="active"></span>1 000 000 €</td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Franchise Assistance<br>en cas de panne</h4>
+              </td>
+              <td><span class="active"></span>25 km</td>
+              <td><span class="active"></span>0 km</td>
+              <td><span class="active"></span>0 km</td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Prêt de véhicule<br>(garage/domicile)</h4>
+              </td>
+              <td><span class="active"></span><i class="icon-cross icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+              <td><span class="active"></span><i class="icon-check icon status"></i></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th></th>
+              <th>
+                <span class="active"></span>
+
+                  <div class="level"><span>INITIAL</span></div>
+                    <div class="price">57 €<br><span>par an</span></div>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>ÉQUILIBRE</span></div>
+                  <div class="price">60 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>CONFORT</span></div>
+                  <div class="price">76 €<br><span>par an</span></div>
+              </th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>
+                <span class="active"></span>
+                <div class="ui checkbox initial">
+                  <input type="checkbox" name="pack1" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui checkbox equilibre">
+                  <input type="checkbox" name="pack2" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui checkbox confort">
+                  <input type="checkbox" name="pack3">
+                  <label><span></span></label>
+                </div>
+              </th>
+            </tr>
+          </thead>
         </table>
 
+        <!-- FIN TABLE PACKS -->
       </div>
 
-      <div class="sixteen wide column title">
-        <h2>CHOISISSEZ VOTRE PACK</h2>
-      </div>
 
 
 
@@ -113,83 +406,13 @@
 <!-- FOOTER -->
 <div id="footer" class="ui vertical center aligned segment">
 
-  <h3>VOTRE TARIF ASSURANCE AUTO  <span>252 € /an<span></h3>
+  <h3>VOTRE TARIF ASSURANCE AUTO  <span>323 € /an<span></h3>
   <div class="ui section inverted divider"></div>
   <button class="big ui green button cta">
-    Voir le récapitulatif et souscrire  <i class="chevron right icon"></i>
+    Souscrire  <i class="chevron right icon"></i>
   </button>
 
-  <!-- Modal souscription -->
-  <div class="long ui modal">
-    <div class="ui segment close">
-      <img src="images/close.svg">
-    </div>
-    <div class="cartTableWrapper mCustomScrollbar" data-mcs-theme="dark">
-    <table class="ui single line padded very basic table">
-      <tbody>
-        <thead>
-          <tr>
-            <th class="first" colspan="5">VOS GARANTIES MINIMUM</th>
-          </tr>
-        </thead>
-        <tr>
-          <td colspan="3">Responsabilité civile + Dépense Pénale et Recours Suite à Accident</td>
-          <td class="amount">54 €</td>
-          <td><i class="huge icon-locker icon"></i></td>
-        </tr>
-        <thead>
-          <tr>
-            <th colspan="5">VOTRE SÉLECTION DE GARANTIES</th>
-          </tr>
-        </thead>
-        <tr>
-          <td>VOTRE PROTECTION</td>
-          <td class="offer">Garantie du conducteur</td>
-          <td class="detailOffer">Jusqu’à 500 000 €</td>
-          <td class="amount">54 €</td>
-          <td><i class="huge icon-trash icon"></i></td>
-        </tr>
-        <tr>
-          <td>ASSISTANCE</td>
-          <td class="offer">Dépannage</td>
-          <td class="detailOffer">Niveau 1</td>
-          <td class="amount">8 €</td>
-          <td><i class="huge icon-trash icon"></i></td>
-        </tr>
-        <tr>
-          <td>VÉHICULE</td>
-          <td class="offer">Vol / Incendie / Évén. climatiques</td>
-          <td class="detailOffer">Sans Franchise</td>
-          <td class="amount">20 €</td>
-          <td><i class="huge icon-trash icon"></i></td>
-        </tr>
-        <tr class="owned">
-          <td></td>
-          <td class="offer">Bris de glace</td>
-          <td class="detailOffer">Niveau 2</td>
-          <td class="amount">21 €</td>
-          <td><i class="huge icon-trash icon"></i></td>
-        </tr>
-        <tr>
-          <td>CE QUE VOUS TRANSPORTEZ</td>
-          <td class="offer">Animaux domestiques</td>
-          <td class="detailOffer"></td>
-          <td class="amount">30 €</td>
-          <td><i class="huge icon-trash icon"></i></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-    <div class="footer" >
 
-      <h3>VOTRE TARIF ASSURANCE AUTO  <span>309 € /an<span></h3>
-      <div class="ui section inverted divider"></div>
-      <button class="big ui green button cta">
-        Voir le récapitulatif et souscrire  <i class="chevron right icon"></i>
-      </button>
-    </div>
-  </div>
-  <!-- Fin Modal souscription -->
 </div>
 <!-- FIN FOOTER -->
 <!-- AVANTAGES -->

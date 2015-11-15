@@ -2,10 +2,16 @@ $(document)
   .ready(function() {
 
 
-// RADIO PRESELECT
+// POPUP
 
-$('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(4) span.active').addClass("selected");
-$('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(4) span.active').addClass("selected");
+    $('.pop')
+    .popup({
+      transition: 'fade down',
+      hoverable: true,
+    }
+  )
+  ;
+
 
 
 // RADIO GARANTIES
@@ -24,34 +30,46 @@ $('#niveauxGaranties .ui.checkbox')
             $('#niveauxGaranties .ui.striped.padded.table tr th span.active').removeClass("selected");
             $('#niveauxGaranties .ui.striped.padded.table tr td span.active').removeClass("selected");
 
-          if( $(me).hasClass('tiers')){
-            $(me).parent().parent().parent().parent().find('.checkbox.tiers').checkbox('set checked');
+          if( $(me).hasClass('formule1')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule1').checkbox('set checked');
             $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(2) span.active').addClass("selected");
             $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(2) span.active').addClass("selected");
           }
 
-          if( $(me).hasClass('tiersEssentiel')){
-            $(me).parent().parent().parent().parent().find('.checkbox.tiersEssentiel').checkbox('set checked');
+          if( $(me).hasClass('formule2')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule2').checkbox('set checked');
             $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(3) span.active').addClass("selected");
             $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(3) span.active').addClass("selected");
           }
 
-          if( $(me).hasClass('tiersEtendu')){
-            $(me).parent().parent().parent().parent().find('.checkbox.tiersEtendu').checkbox('set checked');
+          if( $(me).hasClass('formule3')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule3').checkbox('set checked');
             $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(4) span.active').addClass("selected");
             $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(4) span.active').addClass("selected");
           }
 
-          if( $(me).hasClass('tousRisques')){
-            $(me).parent().parent().parent().parent().find('.checkbox.tousRisques').checkbox('set checked');
+          if( $(me).hasClass('formule4')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule4').checkbox('set checked');
             $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(5) span.active').addClass("selected");
             $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(5) span.active').addClass("selected");
           }
 
-          if( $(me).hasClass('tousRisquesEtendu')){
-            $(me).parent().parent().parent().parent().find('.checkbox.tousRisquesEtendu').checkbox('set checked');
+          if( $(me).hasClass('formule5')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule5').checkbox('set checked');
             $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(6) span.active').addClass("selected");
             $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(6) span.active').addClass("selected");
+          }
+
+          if( $(me).hasClass('formule6')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule6').checkbox('set checked');
+            $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(7) span.active').addClass("selected");
+            $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(7) span.active').addClass("selected");
+          }
+
+          if( $(me).hasClass('formule7')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule7').checkbox('set checked');
+            $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(8) span.active').addClass("selected");
+            $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(8) span.active').addClass("selected");
           }
 
           }else{

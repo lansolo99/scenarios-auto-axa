@@ -193,6 +193,12 @@ h5 {
   }
 }
 
+@media only screen and (min-width: 320px){
+.garanties .ui.page.grid {
+    width: 1250px;
+}
+}
+
 .ui.padded.grid:not(.vertically):not(.horizontally) {
   margin:auto !important;
 }
@@ -303,7 +309,9 @@ i.huge.icons {
 .ui.padded.table th{
   text-align: center;
   color: #ffffff;
+  padding : 1em 0.5em;
 }
+
 
 .ui.padded.table th:nth-child(2){
   background-color: rgba(16, 49, 132, 0.6);
@@ -318,34 +326,27 @@ i.huge.icons {
 }
 
 .ui.padded.table th:nth-child(5){
-  background-color: rgba(16, 49, 132, 0.9);
+  background-color: rgba(16, 49, 132, 0.85);
 }
 
 .ui.padded.table th:nth-child(6){
+  background-color: rgba(16, 49, 132, 0.9);
+}
+
+.ui.padded.table th:nth-child(7){
+  background-color: rgba(16, 49, 132, 0.95);
+}
+
+.ui.padded.table th:nth-child(8){
   background-color: rgba(16, 49, 132, 1);
 }
 
-.ui.padded.table thead tr th:nth-child(6){
-  background-color: rgba(16, 49, 132, 1);
-}
 
 .ui.padded.table thead tr:nth-child(2) th{
   padding: 0;
   text-align: center;
 }
 
-
-#packs .ui.padded.table th:nth-child(2){
-  background: #dd8b48;
-}
-
-#packs .ui.padded.table th:nth-child(3){
-  background: #3e59a4;
-}
-
-#packs .ui.padded.table th:nth-child(4){
-  background: #008c0d;
-}
 
 
 .ui.table thead tr:first-child > th:last-child{
@@ -358,19 +359,21 @@ i.huge.icons {
 }
 
 
-
 .ui.table tr{
   background: #efefef;
 }
 
 .ui.padded.table tr td{
-  font-family: 'urwfranklingothicw02medium';
+  font-family: 'urwfranklingothicw02regular';
   font-weight: normal;
-  padding: 1.2em 1em;
-
+  padding: 1.2em 1.2em;
+  font-size: 13px;
+  height: 72px;
 }
 
-
+.ui.padded.table tr td:not([class*=".ui.padded.table tr td:nth-child(1)"]){
+  padding: 1.2em 0.5em;
+}
 
 /* Table Striping */
 
@@ -381,7 +384,7 @@ i.huge.icons {
 
 #niveauxGaranties .ui.table tr th,
 #niveauxGaranties .ui.table tr td{
- width: 123px;
+ width: 160px;
  text-align: center;
 }
 
@@ -391,11 +394,11 @@ i.huge.icons {
  text-align: center;
 }
 
-#niveauxGaranties .ui.table tr td:first-child,
-#packs .ui.table tr td:first-child{
-  width: 300px !important;
+#niveauxGaranties .ui.table tr td:first-child{
+  width: 371px !important;
   border-right: 967;
   text-align: left;
+  padding: 1.2em 1em;
 }
 
 .ui.striped.padded.table thead tr th,
@@ -476,9 +479,6 @@ z-index: -2;
   line-height: 0.7em;
 }
 
-#niveauxGaranties .ui.table thead th .price{
-  margin-top: 16px;
-}
 
 .ui.table thead th .price span{
   margin: 0;
@@ -598,19 +598,28 @@ z-index: -2;
     z-index: 2;
   }
 
+
+.garanties .ui.segment .iconInfo{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    vertical-align: -3px;
+    margin-left: 3px;
+  }
+
+
 .garanties .ui.segment .table i.icon.icon-check {
     color: #05ba1a;
-
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
   }
 
 .garanties .ui.segment .table i.icon.icon-cross {
-    color: #c50005;
+    color: #c4c4c4;
     font-size: 24px;
   }
 
-.garanties .ui.segment .table i.icon.status {
-
-  }
 
 .garanties{
   position: relative;
@@ -641,6 +650,13 @@ z-index: -2;
 .garanties .ui.segment  h4 span{
   font-family: 'urwfranklingothicw02regular';
   font-weight: normal;
+}
+
+.garanties .iconInfo {
+    width: 17px;
+    height: 17px;
+    vertical-align: -3px;
+    margin-left: 5px;
 }
 
 .garanties .ui.segment > .grid > .column {
@@ -712,155 +728,26 @@ z-index: -2;
 
 
 
+
 /*******************************
-          Modal CTA
+             Popup
 *******************************/
-
-
-.ui.modal{
-
-  /* width: auto; */
-  min-width: 795px;
-  border-radius: 0;
-  box-shadow: none;
-  background: #efefef;
-  border:none;
-  padding: 0px;
-}
-
-.ui.modal .ui.segment.close {
-  position: absolute;
-  width:15px;
-  box-shadow: none;
-  background: none;
-  top:20px;
-  right:20px;
-  border: none;
-  border-radius: none;
-}
-
-
-
-.ui.modal .ui.segment.close:hover {
-  background: #efefef;
-}
-
-.ui.dimmer .ui.modal table{
-  /* padding:30px; */
-  margin-bottom: 20px;
-}
-
-.ui.modal table i{
-  font-size: 1.2em;
-  color: #ccc;
-  cursor: pointer;
-}
-
-.ui.modal table i.icon{
-  font-family: 'icomoon';
-}
-
-
-.ui.modal table i:hover{
-  color: #103184;
-  transition: color 0.3s;
-}
-
-.ui.modal table .offer{
-  font-family: 'urwfranklingothicw02medium';
-}
-
-.ui.modal table .detailOffer, #footer .ui.modal table .amount{
-  font-family: 'urwfranklingothicw02medium';
-  color: #103184;
-}
-
-.ui.modal .ui.basic.table tbody tr.owned td{
-border-top: 1px dashed #cccccc;
-}
-
-.ui.dimmer .ui.modal .ui.basic.table thead th{
-  padding-top: 25px;
-  font-family: 'urwfranklingothicw02medium';
-}
-
-.ui.modal .ui.basic.table thead th.first{
-  padding-top: 0px;
-}
-
-.ui.modal .ui.basic.table tr:last-child td{
-  padding-bottom: 0px;
-}
-
-.ui.modal .footer {
-  text-align: center;
-  padding: 20px 0;
-  color: #fff;
-  margin:auto;
-  background: #103184;
-}
-
-.ui.modal .footer h3{
-  display: block;
-  font-weight: normal;
-  font-size: 18px;
+.garanties .ui.segment .popup {
+  background: #222663;
   font-family: 'urwfranklingothicw02regular';
-  /* margin-bottom: 20px; */
+  font-size: 16px;
+  border-radius: 0rem;
+  min-width:500px;
 }
 
-.ui.modal .footer h3 span{
-  display: inline-block;
-  font-size: 30px;
-  margin-left: 10px;
+.garanties .ui.segment .ui.popup:before {
+  background: #222663;
 }
 
 
-.ui.modal .footer .ui.big.button{
-  font-family: 'urwfranklingothicw02medium';
-  font-weight: normal;
-  font-size: 19px;
-  text-transform: uppercase;
-  padding-bottom: 12px;
-}
 
-.garanties .ui.right.rail .ui.modal .footer .ui.button{
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-}
 
-.ui.modal .footer .ui.green.button{
-  background: #1bb526;
-}
 
-.ui.modal .footer .ui.green.button:hover{
-  transition: background 0.2s;
-  background: #14971d;
-}
-
-.ui.modal .footer .ui.button > i.icon{
-  font-size: 14px;
-}
-
-.ui.modal .footer .ui.section.divider{
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-
-.ui.modal .cartTableWrapper{
-  position: relative;
-  margin-top: 50px;
-  height: 450px;
-  max-height: 450px;
-  overflow:auto;
-}
-
-.ui.dimmer .ui.modal .cartTableWrapper{
-  padding: 40px;
-}
-
-.mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
-  background-color: rgba(0,0,0,0.3);
-}
 
 
 
