@@ -2,10 +2,17 @@ $(document)
   .ready(function() {
 
 
-// RADIO PRESELECT
 
-$('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(4) span.active').addClass("selected");
-$('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(4) span.active').addClass("selected");
+// POPUP
+
+    $('.pop')
+    .popup({
+      transition: 'fade down',
+      hoverable: true,
+    }
+  )
+  ;
+
 
 
 // RADIO GARANTIES

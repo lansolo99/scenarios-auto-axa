@@ -385,6 +385,13 @@ i.huge.icons {
  text-align: center;
 }
 
+#packs .ui.padded.table tr th.title,
+#niveauxGaranties .ui.padded.table tr th.title{
+ text-align: left;
+ padding: 0;
+ background: #ffffff;
+}
+
 #packs .ui.table tr th,
 #packs .ui.table tr td{
  width: 205px ;
@@ -598,6 +605,16 @@ z-index: -2;
     z-index: 2;
   }
 
+
+.garanties .ui.segment .iconInfo{
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      vertical-align: -3px;
+      margin-left: 3px;
+    }
+
+
 .garanties .ui.segment .table i.icon.icon-check {
     color: #05ba1a;
 
@@ -625,7 +642,7 @@ z-index: -2;
   font-family: 'urwfranklingothicw02regular';
   font-weight: normal;
   margin: auto;
-  text-align: center;
+  text-align: left;
   color: #103184;
   font-size: 35px;
   margin-bottom: 40px;
@@ -861,6 +878,26 @@ border-top: 1px dashed #cccccc;
 .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
   background-color: rgba(0,0,0,0.3);
 }
+
+
+
+
+
+/*******************************
+             Popup
+*******************************/
+.garanties .ui.segment .popup {
+  background: #222663;
+  font-family: 'urwfranklingothicw02regular';
+  font-size: 16px;
+  border-radius: 0rem;
+  min-width:500px;
+}
+
+.garanties .ui.segment .ui.popup:before {
+  background: #222663;
+}
+
 
 
 
