@@ -72,6 +72,12 @@ $('#niveauxGaranties .ui.checkbox')
             $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(8) span.active').addClass("selected");
           }
 
+          if( $(me).hasClass('formule8')){
+            $(me).parent().parent().parent().parent().find('.checkbox.formule8').checkbox('set checked');
+            $('#niveauxGaranties .ui.striped.padded.table tr th:nth-child(9) span.active').addClass("selected");
+            $('#niveauxGaranties .ui.striped.padded.table tr td:nth-child(9) span.active').addClass("selected");
+          }
+
           }else{
             // is already checked
       }

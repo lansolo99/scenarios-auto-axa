@@ -195,7 +195,7 @@ h5 {
 
 @media only screen and (min-width: 320px){
 .garanties .ui.page.grid {
-    width: 1250px;
+    width: 1300px;
 }
 }
 
@@ -341,6 +341,10 @@ i.huge.icons {
   background-color: rgba(16, 49, 132, 1);
 }
 
+.ui.padded.table th:nth-child(9){
+  background-color: rgba(14, 44, 120, 1);
+}
+
 
 .ui.padded.table thead tr:nth-child(2) th{
   padding: 0;
@@ -386,6 +390,23 @@ i.huge.icons {
 #niveauxGaranties .ui.table tr td{
  width: 160px;
  text-align: center;
+}
+
+#niveauxGaranties .ui.table tr.niveau th{
+ background: #ffffff;
+ color: #666666;
+ border:none;
+}
+
+#niveauxGaranties .ui.divider{
+  margin: 0.5em 0 0 0;
+}
+
+#niveauxGaranties .ui.padded.table tr th.title{
+ text-align: left;
+ padding: 0;
+ background: #ffffff;
+ border-left:none;
 }
 
 #packs .ui.table tr th,
@@ -634,10 +655,11 @@ z-index: -2;
   font-family: 'urwfranklingothicw02regular';
   font-weight: normal;
   margin: auto;
-  text-align: center;
+  text-align: left;
   color: #103184;
   font-size: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .garanties .ui.segment  h4{

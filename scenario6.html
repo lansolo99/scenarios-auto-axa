@@ -59,11 +59,34 @@
     <div class="ui page relaxed grid">
 
       <div id="niveauxGaranties" class="sixteen wide column title">
-        <h2>CHOISISSEZ VOTRE FORMULE</h2>
 
         <!-- TABLE NIVEAUX DE GARANTIES -->
         <table class="ui padded celled striped unstackable table">
           <thead>
+            <tr>
+              <th></th>
+              <th colspan="6" class="title"><h2>CHOISISSEZ VOTRE FORMULE</h2></th>
+            </tr>
+          </thead>
+          <thead>
+            <tr class="niveau">
+              <th></th>
+              <th colspan ="2">
+                TIERS
+                <div class="ui divider"></div>
+              </th>
+              <th>
+                TIERS ÉTENDU
+                <div class="ui divider"></div>
+              </th>
+                <th colspan ="5">TOUS RISQUES
+                <div class="ui divider"></div>
+              </th>
+            </tr>
+          </thead>
+          
+          <thead>
+
             <tr>
               <th></th>
               <th>
@@ -74,31 +97,36 @@
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 2</span></div>
-                <div class="price">329 €<br><span>par an</span></div>
+                <div class="price">352 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 3</span></div>
-                <div class="price">479 €<br><span>par an</span></div>
+                <div class="price">368 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 4</span></div>
-                <div class="price">559 €<br><span>par an</span></div>
+                <div class="price">539 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 5</span></div>
-                <div class="price">614 €<br><span>par an</span></div>
+                <div class="price">586 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 6</span></div>
-                <div class="price">870 €<br><span>par an</span></div>
+                <div class="price">641 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 7</span></div>
+                <div class="price">870 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>FORMULE 8</span></div>
                 <div class="price">1275 €<br><span>par an</span></div>
               </th>
             </tr>
@@ -121,14 +149,14 @@
               <th>
                 <span class="active"></span>
                 <div class="ui radio checkbox formule3">
-                  <input type="radio" name="garantieTop">
+                  <input type="radio" name="garantieTop" >
                   <label><span></span></label>
                 </div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="ui radio checkbox formule4">
-                  <input type="radio" name="garantieTop" >
+                  <input type="radio" name="garantieTop">
                   <label><span></span></label>
                 </div>
               </th>
@@ -149,6 +177,13 @@
               <th>
                 <span class="active"></span>
                 <div class="ui radio checkbox formule7">
+                  <input type="radio" name="garantieTop" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox formule8">
                   <input type="radio" name="garantieTop" >
                   <label><span></span></label>
                 </div>
@@ -177,6 +212,7 @@
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
             </tr>
             <tr>
               <td>
@@ -187,6 +223,7 @@
                   </div>
                 </h4>
               </td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
@@ -205,6 +242,7 @@
                 </h4>
               </td>
               <td><span class="active"></span><i class="icon-check icon"></i>jusqu’à 250 000 €</td>
+              <td><span class="active"></span><i class="icon-check icon"></i>jusqu’à 500 000 €</td>
               <td><span class="active"></span><i class="icon-check icon"></i>jusqu’à 500 000 €</td>
               <td><span class="active"></span><i class="icon-check icon"></i>jusqu’à 500 000 €</td>
               <td><span class="active"></span><i class="icon-check icon"></i>jusqu’à 500 000 €</td>
@@ -229,6 +267,7 @@
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
+              <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
             </tr>
             <tr>
               <td>
@@ -241,6 +280,7 @@
               </td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 70 €</td>
+              <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 70 €</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
@@ -249,7 +289,7 @@
             </tr>
             <tr>
               <td>
-                <h4>Vol
+                <h4>Vol, incendie et événements climatiques
                   <img src="images/information_dark_grey.svg" class="iconInfo pop" data-variation="wide inverted" data-position="top center">
                   <div class="ui popup transition hidden">
                     Nous vous indemnisons en cas de vol ou d’incendie de votre véhicule. En cas de vol, si votre véhicule est retrouvé, nous prenons en charge les réparations des dommages subis.<br>
@@ -258,9 +298,10 @@
                 </h4>
               </td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 300 €</td>
-              <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
-              <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
+              <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 300 €</td>
+              <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 300 €</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
               <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
@@ -281,24 +322,7 @@
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
-            </tr>
-            <tr>
-              <td>
-                <h4>Incendie et évènements<br>climatiques
-                  <img src="images/information_dark_grey.svg" class="iconInfo pop" data-variation="wide inverted" data-position="top center">
-                  <div class="ui popup transition hidden">
-                    Nous vous indemnisons en cas de vol ou d’incendie de votre véhicule. En cas de vol, si votre véhicule est retrouvé, nous prenons en charge les réparations des dommages subis.
-                    Nous vous indemnisons également pour les dommages matériels subis par votre véhicule en cas de grêle, neige, tempête, ouragan ou cyclone.
-                  </div>
-                </h4>
-              </td>
-              <td><span class="active"></span><i class="icon-cross icon"></i></td>
-              <td><span class="active"></span><i class="icon-cross icon"></i></td>
-              <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 300 €</td>
-              <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 300 €</td>
-              <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 300 €</td>
-              <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
-              <td><span class="active"></span><i class="icon-check icon"></i>sans franchise</td>
+              <td><span class="active"></span><i class="icon-check icon"></i></td>
             </tr>
             <tr>
               <td>
@@ -309,6 +333,7 @@
                   </div>
                 </h4>
               </td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i>avec franchise 300 €</td>
@@ -326,6 +351,7 @@
                   </div>
                 </h4>
               </td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
@@ -353,6 +379,7 @@
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
@@ -366,6 +393,7 @@
                   </div>
                 </h4>
               </td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
@@ -395,6 +423,7 @@
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
@@ -409,6 +438,7 @@
                   </div>
                 </h4>
               </td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
@@ -432,6 +462,7 @@
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
             </tr>
             <tr>
@@ -443,6 +474,7 @@
                   </div>
                 </h4>
               </td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
@@ -466,6 +498,7 @@
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-cross icon"></i></td>
+              <td><span class="active"></span><i class="icon-cross icon"></i></td>
               <td><span class="active"></span><i class="icon-check icon"></i></td>
             </tr>
           </tbody>
@@ -480,31 +513,36 @@
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 2</span></div>
-                <div class="price">329 €<br><span>par an</span></div>
+                <div class="price">352 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 3</span></div>
-                <div class="price">479 €<br><span>par an</span></div>
+                <div class="price">368 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 4</span></div>
-                <div class="price">559 €<br><span>par an</span></div>
+                <div class="price">539 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 5</span></div>
-                <div class="price">614 €<br><span>par an</span></div>
+                <div class="price">586 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 6</span></div>
-                <div class="price">870 €<br><span>par an</span></div>
+                <div class="price">641 €<br><span>par an</span></div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="level"><span>FORMULE 7</span></div>
+                <div class="price">870 €<br><span>par an</span></div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="level"><span>FORMULE 8</span></div>
                 <div class="price">1275 €<br><span>par an</span></div>
               </th>
             </tr>
@@ -527,14 +565,14 @@
               <th>
                 <span class="active"></span>
                 <div class="ui radio checkbox formule3">
-                  <input type="radio" name="garantieBottom">
+                  <input type="radio" name="garantieBottom" >
                   <label><span></span></label>
                 </div>
               </th>
               <th>
                 <span class="active"></span>
                 <div class="ui radio checkbox formule4">
-                  <input type="radio" name="garantieBottom" >
+                  <input type="radio" name="garantieBottom">
                   <label><span></span></label>
                 </div>
               </th>
@@ -555,6 +593,13 @@
               <th>
                 <span class="active"></span>
                 <div class="ui radio checkbox formule7">
+                  <input type="radio" name="garantieBottom" >
+                  <label><span></span></label>
+                </div>
+              </th>
+              <th>
+                <span class="active"></span>
+                <div class="ui radio checkbox formule8">
                   <input type="radio" name="garantieBottom" >
                   <label><span></span></label>
                 </div>
