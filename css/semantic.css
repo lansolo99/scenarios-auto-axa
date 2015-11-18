@@ -73,11 +73,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 
-    zoom:1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
+
 }
 
 /**
