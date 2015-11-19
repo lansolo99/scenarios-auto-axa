@@ -62,9 +62,9 @@
       <div class="ui page grid">
           <div class="sixteen wide center aligned column">
             <div class="ui large inverted breadcrumb">
-              <div class="section link"><a href="scenario3.html"><span>Choisissez<br>votre formule</span></a></div>
+              <div class="section link"><a href="scenario3.html#breadcrumb"><span>Choisissez<br>votre formule</span></a></div>
               <i class="right chevron icon divider"></i>
-              <div class="section link"><a href="scenario3_etape2_01_tiers.html#garanties"><span>Personnalisez<br>votre formule</span></a></div>
+              <div class="section link"><a href="scenario3_etape2_01_tiers.html#breadcrumb"><span>Personnalisez<br>votre formule</span></a></div>
               <i class="right chevron icon divider"></i>
               <div class="active section"><span>Choississez vos<br>garanties complémentaires</span></div>
             </div>
@@ -176,7 +176,7 @@
                           <td>
                             <div class="ui checkbox">
                               <input type="checkbox" name="3">
-                              <label>Sans franchise<br>kilométrique<br>+ prêt véhicule </label>
+                              <label class="long">Sans franchise<br>kilométrique<br>+ prêt de véhicule </label>
                               <img src="images/recommandation_badge.svg" class="icon-recommandation icon recommandation"></i>
                               <div class="ui label" data-content="72">72 € /an</div>
                             </div>
@@ -324,10 +324,13 @@
       <div class="one wide column">
 
         <!-- carte garantie -->
-          <div class="ui fluid card">
-            <div class="header centerTitle"><h3>TIERS<br>ÉTENDU</h3>
-          </div>
-        </div>
+        <a href="scenario3_etape2_02_tiers_etendu.html#breadcrumb">
+            <div class="ui fluid card">
+              <div class="header centerTitle"><h3>TIERS<br>ÉTENDU</h3>
+              </div>
+              <div class="content activeArea"></div>
+            </div>
+        </a>
         <!-- fin de carte -->
       </div>
 
@@ -335,12 +338,13 @@
       <div class="one wide column">
         <!-- carte garantie -->
 
-
-          <div class="ui fluid card">
-            <div class="header centerTitle"><h3>TOUS<br>RISQUES</h3>
+          <a href="scenario3_etape2_03_tous_risques.html#breadcrumb">
+            <div class="ui fluid card">
+              <div class="header centerTitle"><h3>TOUS<br>RISQUES</h3>
+              </div>
+              <div class="content activeArea"></div>
             </div>
-          </div>
-
+          </a>
         <!-- fin de carte -->
       </div>
 
@@ -546,7 +550,7 @@
       <h3>VOTRE TARIF ASSURANCE AUTO  <span>309 € /an<span></h3>
       <div class="ui section inverted divider"></div>
       <button class="big ui green button cta">
-        Voir le récapitulatif et souscrire  <i class="chevron right icon"></i>
+        Valider la sélection et souscrire  <i class="chevron right icon"></i>
       </button>
     </div>
   </div>

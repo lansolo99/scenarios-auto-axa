@@ -622,6 +622,10 @@ i.huge.icons {
   padding: 0 20px;
 }
 
+.ui.cards > .card > .content, .ui.card > .content, .card > .content, .ui.card > .content.activeArea{
+  min-height: 460px;
+}
+
 
 .garanties.extended .ui.padded.table td{
   padding: 0;
@@ -705,6 +709,10 @@ i.huge.icons {
 
 .garanties.extended .content.extended .ui.basic.table td.radioGroup label{
   width: 127px;
+}
+
+.garanties.extended .content.extended .ui.basic.table td.radioGroup label.long{
+  width: 140px;
 }
 
 .garanties.extended .content.extended .ui.basic.table td.checkboxSimple .ui.checkbox{
@@ -1023,14 +1031,15 @@ border-top: 1px dashed #cccccc;
 
 .ui.modal .cartTableWrapper{
   position: relative;
-  margin-top: 50px;
-  height: 450px;
-  max-height: 450px;
+  /* margin-top: 50px; */
+  height: 400px;
+  max-height: 400px;
   overflow:auto;
 }
 
 .ui.dimmer .ui.modal .cartTableWrapper{
   padding: 40px;
+  padding-top: 70px;
 }
 
 .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
