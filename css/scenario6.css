@@ -584,13 +584,18 @@ z-index: -2;
 
 /* Legende */
 
-.garanties .legende {
+#niveauxGaranties .ui.table tr th.legende {
   font-family: 'urwfranklingothicw02regular';
   font-weight: normal;
   text-align: left;
   font-size: 14px;
   color: #656565;
   line-height: 1.2rem;
+}
+
+#niveauxGaranties .ui.table .ui.grid.legende{
+  margin-left: 0;
+  padding-bottom: 8px;
 }
 
 .ui.padded.table th.legende{
