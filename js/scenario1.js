@@ -8,7 +8,7 @@ $('.ui.three.cards .ui.checkbox')
   .checkbox({
     onChange: function() {
 
-      var group = $(this).parent().parent().parent().parent().parent().find('.ui.checkbox');
+      var group = $(this).parent().parent().parent().parent().find('.ui.checkbox');
       var me = $(this).parent();
       var others = $(group).not(me);
 
